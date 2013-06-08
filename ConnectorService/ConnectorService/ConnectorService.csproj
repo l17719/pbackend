@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79D00B14-508C-4BFC-B620-B30BD27854B6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConnectorService</RootNamespace>
+    <AssemblyName>ConnectorService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DbTerminalContext" Order="1" Enabled="True">
+          <Destination Path="" />
+          <Object Type="dbFullSql" Enabled="False">
+            <PreSource Path="Data Source=URIEL\SQLIT64%3bInitial Catalog=IFDB%3bIntegrated Security=True" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Release\AutoScripts\DbTerminalContext_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+        <ObjectGroup Name="PHCDATA" Order="2" Enabled="True">
+          <Destination Path="" />
+          <Object Type="dbFullSql" Enabled="False">
+            <PreSource Path="Data Source=URIEL\SQLIT64%3bInitial Catalog=Csdefault2013%3bIntegrated Security=True" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Release\AutoScripts\PHCDATA_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
+    <DeployIisAppPath>Default Web Site/ConnectorService</DeployIisAppPath>
+    <PublishDatabases>true</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Logging, Version=5.0.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataConnector.svc" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APIKeyAuthorization.cs" />
+    <Compile Include="ConnectorServiceFault.cs" />
+    <Compile Include="DataConnector.svc.cs">
+      <DependentUpon>DataConnector.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="IDataConnector.cs" />
+    <Compile Include="Model\IFModel\VODadosTerminal\DadosEncomendas.cs" />
+    <Compile Include="Model\IFModel\VODadosTerminal\DadosTerminal.cs" />
+    <Compile Include="Model\PHCModel\bi2.cs" />
+    <Compile Include="Model\IFModel\DbContextIfElse.cs" />
+    <Compile Include="Model\IFModel\TbOpcoesTerminal.cs" />
+    <Compile Include="Model\IFModel\TbTerminais.cs" />
+    <Compile Include="Model\IFModel\VODadosTerminal\AcesskeyData.cs" />
+    <Compile Include="Model\IFModel\VODadosTerminal\ConfiguracaoTerminal.cs" />
+    <Compile Include="Model\PHCModel\bi.cs" />
+    <Compile Include="Model\PHCModel\bo.cs" />
+    <Compile Include="Model\PHCModel\bo2.cs" />
+    <Compile Include="Model\PHCModel\cc.cs" />
+    <Compile Include="Model\PHCModel\CcFiltradas.cs" />
+    <Compile Include="Model\PHCModel\cl.cs" />
+    <Compile Include="Model\PHCModel\FltCc.cs" />
+    <Compile Include="Model\PHCModel\fltcl.cs" />
+    <Compile Include="Model\PHCModel\fltst.cs" />
+    <Compile Include="Model\PHCModel\Mapping\bi2Map.cs" />
+    <Compile Include="Model\PHCModel\Mapping\biMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\bo2Map.cs" />
+    <Compile Include="Model\PHCModel\Mapping\boMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\ccMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\clMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\FltccMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\fltclMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\fltstMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\pnMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\stMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\StobsMap.cs" />
+    <Compile Include="Model\PHCModel\Mapping\taxasivaMap.cs" />
+    <Compile Include="Model\PHCModel\PHCDbContext.cs" />
+    <Compile Include="Model\PHCModel\pn.cs" />
+    <Compile Include="Model\PHCModel\PnsFiltradas.cs" />
+    <Compile Include="Model\PHCModel\RootElement.cs" />
+    <Compile Include="Model\PHCModel\st.cs" />
+    <Compile Include="Model\PHCModel\taxasiva.cs" />
+    <Compile Include="Model\PHCModel\Stobs.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOAtptit.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VoBi.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOBiDois.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOBL.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOBO.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOBOD.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOCC.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOCL.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\Vopn.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VORE.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VORL.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOst.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOStObs.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\VOtaxasIVA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\DynamicLibrary.cs" />
+    <Compile Include="Utilities\LogFactoryManager.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1069</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

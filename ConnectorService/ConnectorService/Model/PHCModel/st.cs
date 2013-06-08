@@ -1,0 +1,237 @@
+﻿using System;
+
+namespace ConnectorService.Model.PHCModel
+{
+    public class St
+    {
+        //public St()
+        //{
+        //    ListaSt = new List<St>();
+        //}
+
+        public string Ststamp { get; set; }
+        public string StReferencia { get; set; }
+        public string Design { get; set; }
+        public string Familia { get; set; }
+        public decimal Stock { get; set; }
+        public decimal Epv1 { get; set; }
+        public decimal Pv1 { get; set; }
+        public string Forref { get; set; }
+        public string Fornecedor { get; set; }
+        public string Desc3 { get; set; }
+        public string Desc2 { get; set; }
+        public string Desc1 { get; set; }
+        public string Usr2 { get; set; }
+        public string Usr1 { get; set; }
+        public DateTime Validade { get; set; }
+        public DateTime Usaid { get; set; }
+        public DateTime Uintr { get; set; }
+        public decimal Usrqtt { get; set; }
+        public decimal Eoq { get; set; }
+        public decimal Pcult { get; set; }
+        public decimal Pcimp { get; set; }
+        public string Pcmoe { get; set; }
+        public decimal Pvcon { get; set; }
+        public decimal Pvultimo { get; set; }
+        public decimal Pv3 { get; set; }
+        public decimal Pv2 { get; set; }
+        public string Unidade { get; set; }
+        public decimal Ptoenc { get; set; }
+        public decimal Tabiva { get; set; }
+        public string Local { get; set; }
+        public decimal Fornec { get; set; }
+        public decimal Fornestab { get; set; }
+        public decimal Qttfor { get; set; }
+        public decimal Qttcli { get; set; }
+        public decimal Qttrec { get; set; }
+        public DateTime Udata { get; set; }
+        public decimal Pcusto { get; set; }
+        public decimal Pcpond { get; set; }
+        public decimal Qttacin { get; set; }
+        public decimal Qttacout { get; set; }
+        public decimal Qttvend { get; set; }
+        public decimal Pmvenda { get; set; }
+        public decimal Valin { get; set; }
+        public decimal Valout { get; set; }
+        public decimal Stmax { get; set; }
+        public decimal Stmin { get; set; }
+        public string Obs { get; set; }
+        public string Codigo { get; set; }
+        public string Uni2 { get; set; }
+        public decimal Conversao { get; set; }
+        public bool Ivaincl { get; set; }
+        public bool Nsujpp { get; set; }
+        public decimal Ecomissao { get; set; }
+        public string Imagem { get; set; }
+        public decimal Cbbno { get; set; }
+        public decimal Pv4 { get; set; }
+        public decimal Cpoc { get; set; }
+        public string Containv { get; set; }
+        public string Contacev { get; set; }
+        public string Contareo { get; set; }
+        public string Contacoe { get; set; }
+        public decimal Peso { get; set; }
+        public bool Bloqueado { get; set; }
+        public bool Fobloq { get; set; }
+        public decimal Mfornec { get; set; }
+        public decimal Mfornec2 { get; set; }
+        public decimal Pentrega { get; set; }
+        public decimal Consumo { get; set; }
+        public bool Baixr { get; set; }
+        public decimal Despimp { get; set; }
+        public decimal Mesescon { get; set; }
+        public decimal Marg1 { get; set; }
+        public decimal Marg2 { get; set; }
+        public decimal Marg3 { get; set; }
+        public decimal Marg4 { get; set; }
+        public decimal Marg5 { get; set; }
+        public decimal Diaspto { get; set; }
+        public decimal Diaseoq { get; set; }
+        public string Desc4 { get; set; }
+        public string Desc5 { get; set; }
+        public string Desc6 { get; set; }
+        public bool Noserie { get; set; }
+        public bool Clinica { get; set; }
+        public bool Vasilhame { get; set; }
+        public decimal Pbruto { get; set; }
+        public decimal Volume { get; set; }
+        public bool Usalote { get; set; }
+        public bool Texteis { get; set; }
+        public decimal Garantia { get; set; }
+        public DateTime Opendata { get; set; }
+        public string Faminome { get; set; }
+        public string Usr3 { get; set; }
+        public string Usr4 { get; set; }
+        public string Usr5 { get; set; }
+        public decimal Qttesp { get; set; }
+        public decimal Epv2 { get; set; }
+        public decimal Epv3 { get; set; }
+        public decimal Epv4 { get; set; }
+        public decimal Epv5 { get; set; }
+        public decimal Epcusto { get; set; }
+        public decimal Epcpond { get; set; }
+        public decimal Epcult { get; set; }
+        public decimal Epmvenda { get; set; }
+        public decimal Epvultimo { get; set; }
+        public decimal Epvcon { get; set; }
+        // ver este campo
+        public decimal Iva1Incl { get; set; }
+        public decimal Iva2Incl { get; set; }
+        public decimal Iva3Incl { get; set; }
+        public decimal Iva4Incl { get; set; }
+        public decimal Iva5Incl { get; set; }
+        //
+        public bool Ivapcincl { get; set; }
+        public bool Stns { get; set; }
+        public decimal Stid { get; set; }
+        public string Tipodesc { get; set; }
+        public string Usr6 { get; set; }
+        public decimal Convunsup { get; set; }
+        public string Nccod { get; set; }
+        public decimal Massaliq { get; set; }
+        public string Url { get; set; }
+        public decimal Vaiwww { get; set; }
+        public bool Iectsug { get; set; }
+        public decimal Iectin { get; set; }
+        public decimal Eiectin { get; set; }
+        public bool Iectinii { get; set; }
+        public string Codfiscal { get; set; }
+        public bool Iecasug { get; set; }
+        public decimal Iecagrad { get; set; }
+        public string Iecaref { get; set; }
+        public string Iecarefnome { get; set; }
+        public string Txieca { get; set; }
+        public string Txiecanome { get; set; }
+        public string Iecautt { get; set; }
+        public bool Iecamultgrad { get; set; }
+        public bool Iecaisref { get; set; }
+        public string Site { get; set; }
+        public bool Qlook { get; set; }
+        public string Txtqlook { get; set; }
+        public string Imgqlook { get; set; }
+        public string Lang1 { get; set; }
+        public string Langdes1 { get; set; }
+        public string Lang2 { get; set; }
+        public string Langdes2 { get; set; }
+        public string Lang3 { get; set; }
+        public string Langdes3 { get; set; }
+        public string Lang4 { get; set; }
+        public string Langdes4 { get; set; }
+        public string Lang5 { get; set; }
+        public string Langdes5 { get; set; }
+        public bool Nexist { get; set; }
+        public string Statuspda { get; set; }
+        public decimal Qttcat { get; set; }
+        public bool Compnovo { get; set; }
+        public bool Ecovalor { get; set; }
+        public decimal Eecoval { get; set; }
+        public decimal Ecoval { get; set; }
+        public bool Ecopl { get; set; }
+        public decimal Eecopval { get; set; }
+        public decimal Ecopval { get; set; }
+        public bool Ecoel { get; set; }
+        public decimal Eecoeval { get; set; }
+        public decimal Ecoeval { get; set; }
+        public bool Ecorl { get; set; }
+        public decimal Eecorval { get; set; }
+        public decimal Ecorval { get; set; }
+        public bool Ecool { get; set; }
+        public decimal Eecooval { get; set; }
+        public decimal Ecooval { get; set; }
+        public bool Ecopilha { get; set; }
+        public bool Ecoacumulador { get; set; }
+        public string Ousrinis { get; set; }
+        public DateTime Ousrdata { get; set; }
+        public string Ousrhora { get; set; }
+        public string Usrinis { get; set; }
+        public DateTime Usrdata { get; set; }
+        public string Usrhora { get; set; }
+        public bool Marcada { get; set; }
+
+        public bool Qtttouch { get; set; }
+        public bool Semserprv { get; set; }
+        public string Contaieo { get; set; }
+        public bool Inactivo { get; set; }
+        public bool Orcamento { get; set; }
+        public string Refmo { get; set; }
+        public string Descrmo { get; set; }
+        public decimal Pcmo { get; set; }
+        public decimal Epcmo { get; set; }
+        public decimal Custo { get; set; }
+        public decimal Ecusto { get; set; }
+        public decimal Desci { get; set; }
+        public decimal Descii { get; set; }
+        public DateTime Datar { get; set; }
+        public decimal Pcdisp { get; set; }
+        public decimal Epcdisp { get; set; }
+        public decimal Pclab { get; set; }
+        public decimal Epclab { get; set; }
+        public decimal Custof { get; set; }
+        public decimal Ecustof { get; set; }
+        public string Ofcstamp { get; set; }
+        public decimal Custog { get; set; }
+        public decimal Ecustog { get; set; }
+        public string Unidadef { get; set; }
+        public decimal Codcmb { get; set; }
+        public bool Cancpos { get; set; }
+        public DateTime Datanovpv { get; set; }
+        public string Horanovpv { get; set; }
+        public string Tkhclass { get; set; }
+        public bool Stocktch { get; set; }
+        public string UStrt { get; set; }
+        public bool Mod { get; set; }
+        public string Restctprep { get; set; }
+        public string Idudesign { get; set; }
+        public bool Notimpcp { get; set; }
+        public bool Impfuelpos { get; set; }
+        public bool Amostra { get; set; }
+
+        public bool Sujinv { get; set; }
+        public string Orcrefext { get; set; }
+
+
+       // public virtual ICollection<St> ListaSt { get; set; } 
+
+        
+    }
+}
