@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="BackEndAplication.Views.RegistoAppView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:cal="http://www.caliburnproject.org"
+             mc:Ignorable="d" Height="400" Width="400">
+  <Grid>
+    <Image Name="imgLogoApp" Margin="9,7,7,199" />
+    <Label Content="Chave Aplicacao: " Margin="11,208,288,167" Name="lblChave" />
+    <TextBox Margin="12,231,13,146" Name="TxtChave" />
+    <Label Content="Endereço Mail: " Margin="11,276,0,99" Name="lblMailCliente" HorizontalAlignment="Left"
+           Width="101" />
+    <TextBox Margin="12,307,13,70" Name="TxtMailCliente" />
+    <Button Content="Submeter" Height="23" HorizontalAlignment="Left" Margin="313,336,0,0" Name="btnSubmit"
+            VerticalAlignment="Top" Width="75" cal:Message.Attach="[Event Click]=[Action ValidateSerial]" />
+  </Grid>
+</UserControl>

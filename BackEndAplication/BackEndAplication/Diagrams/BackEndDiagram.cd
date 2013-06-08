@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="BackEndAplication.App" Collapsed="true">
+    <Position X="8" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Bootstrapper" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAACIABAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Bootstrapper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.VisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Events.AppMessage" Collapsed="true">
+    <Position X="10" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\AppMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventAggregationProvider" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventAggregationProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventoBackend" Collapsed="true">
+    <Position X="10" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Events\EventoBackend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventoChangeActiveViewTerminal" Collapsed="true">
+    <Position X="10" Y="10.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAIAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoChangeActiveViewTerminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventoEncerramento" Collapsed="true">
+    <Position X="10" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoEncerramento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventoModal" Collapsed="true">
+    <Position X="10" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoModal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Events.EventoSelectedData" Collapsed="true">
+    <Position X="10" Y="12.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAgAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoSelectedData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.ResultadoRemoto" Collapsed="true">
+    <Position X="11.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CheckLicenceResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.CheckLicenceResult" Collapsed="true">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CheckLicenceResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.Configuracao" Collapsed="true">
+    <Position X="13.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABaAGTAMEAAAAgAQAkAABBRAQDAQEEEAAAAAEA=</HashCode>
+      <FileName>Models\Configuracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.ElementoConfiguracao" Collapsed="true">
+    <Position X="9.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABIABAAAAAAAAgRAAAQCEQgAAAAAAQAAQAAAAAAQAA=</HashCode>
+      <FileName>Models\ElementoConfiguracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.ElementosConfiguracao" Collapsed="true">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAQAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ElementosConfiguracao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.Terminal" Collapsed="true">
+    <Position X="3.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQEABABgAAAACBAGBAAAAAAAAIgAgiAAAABAACA=</HashCode>
+      <FileName>Models\Terminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Bo" Collapsed="true">
+    <Position X="19" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NSy7hrk3UKzswDdxeisjwaJvDnjASPPCpB9kXrsHmCc=</HashCode>
+      <FileName>Models\PHCDBModel\bo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Cl" Collapsed="true">
+    <Position X="19" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8p736nvH2m1u2R184zcbwvmSaG75CL7kvd/2QdMhqt8=</HashCode>
+      <FileName>Models\PHCDBModel\cl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Fltcl" Collapsed="true">
+    <Position X="19" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAgBQAAJAABAAAAAAQARAQQAACAAgAAAAAABAAA=</HashCode>
+      <FileName>Models\PHCDBModel\fltcl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Fltst" Collapsed="true">
+    <Position X="19" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQAAgBQAAJAABAAAAAAQAQAQQAACAAgAAAAAABAAA=</HashCode>
+      <FileName>Models\PHCDBModel\fltst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.PdbContext" Collapsed="true">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAgAAAEAAAgABAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\PHCDBModel\PDBContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.PdbCustomInitializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\PDBCustomInitializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Ts" Collapsed="true">
+    <Position X="19" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>mMo17uif8rJ7B4tnsGLr7UX//R/9IPzotvxEkfgZEe0=</HashCode>
+      <FileName>Models\PHCDBModel\ts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Us" Collapsed="true">
+    <Position X="19" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA0ACAoASKRKBQBEoYBJIIMIA1FABDQkkgSoCcENECA=</HashCode>
+      <FileName>Models\PHCDBModel\Us.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Utilizadores" Collapsed="true">
+    <Position X="19" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AA0ACAoASKRKBQBEoYBJIIMIA1FABDQkkgSoCcENECA=</HashCode>
+      <FileName>Models\PHCDBModel\Utilizadores.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.BoMap" Collapsed="true">
+    <Position X="20.75" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\boMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.ClMap" Collapsed="true">
+    <Position X="20.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\clMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.FltclMap" Collapsed="true">
+    <Position X="20.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\fltclMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.FltstMap" Collapsed="true">
+    <Position X="20.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\fltstMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.TsMap" Collapsed="true">
+    <Position X="20.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\TsMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.UsMap" Collapsed="true">
+    <Position X="20.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\UsMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.PHCDBModel.Mapping.UtilizadoresMap" Collapsed="true">
+    <Position X="20.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PHCDBModel\Mapping\UtilizadoresMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.ListDataBaseResultSet" Collapsed="true">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Models\StoredProc\ListDataBaseResultSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.ResultsList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAgBAACAAAAAAAAAAAAAAAAAgAAIBAAAA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.StoredProc&lt;T&gt;" Collapsed="true">
+    <Position X="24.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAQgAAAQQA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.StoredProc" Collapsed="true">
+    <Position X="24.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAIAAAAAAAAAEAAAAAAAAAAAQgAAgAwA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.CodeFirstStoredProcs" Collapsed="true">
+    <Position X="22.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.CodeFirstStoredProcHelpers" Collapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAIAAAAAAAAAAAAAAIAQAAQAAAAAAA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.StoredProc.StoredProcAttributes" Collapsed="true">
+    <Position X="24.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StoredProc\ResultsList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.TerminalDBModel.DbTerminalContext" Collapsed="true">
+    <Position X="18.75" Y="15.25" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAIAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TerminalDBModel\DBTerminalContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.TerminalDBModel.DbTerminalCustomInitializer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.75" Y="16.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TerminalDBModel\DBTerminalCustomInitializer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Models.TerminalDBModel.TbOpcoesTerminal" Collapsed="true">
+    <Position X="18.75" Y="17.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>GAAzAAQADAAAgAAAAQABAIIAIEIgCYAUAAiAAACEAAA=</HashCode>
+      <FileName>Models\TerminalDBModel\TbOpcoesTerminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Models.TerminalDBModel.TbTerminal" Collapsed="true">
+    <Position X="21" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAhAAgAAAAAARAAAIEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TerminalDBModel\TbTerminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Properties.Resources" Collapsed="true">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Properties.Settings" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Service.DataService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAQAgAAAAgwgsAAOIBABAAoIAARDAQQRAECAgA=</HashCode>
+      <FileName>Service\DataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Service.MockService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service\MockService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Service.RemoteService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEUAAAAAAAAAAAAAAAEAAABAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Service\RemoteService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Utilities.AttachedProperties.PasswordBoxHelper" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAIQAgEBAEAAAAAAIAAABAAAAAAgAAAICA=</HashCode>
+      <FileName>Utilities\AttachedProperties\PasswordBoxHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Utilities.LogFactoryManager" Collapsed="true">
+    <Position X="13.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAQIAAAAAAAwgAAAAAARAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\LogFactoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Utilities.ShowDialog&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAYAAAAAAAAAAAAAAAAAFAAACAgAAAA=</HashCode>
+      <FileName>Utilities\ShowDialog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Utilities.Utility" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IUEEEERgAApQACIAkAGAgARABABWAIAQIAAQAECAAIA=</HashCode>
+      <FileName>Utilities\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.ConfiguracaoWebServerViewModel" Collapsed="true">
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAEAiDAAEAAAIgAAIAAAAgQQEJQAAAAEAAACCAAUA=</HashCode>
+      <FileName>ViewModels\ConfiguracaoWebServerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.DadosPhcViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KSyRmBqIXQ4KGAAWFOoIDiApyACSACNgE2pAoEGALZg=</HashCode>
+      <FileName>ViewModels\DadosPhcViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.DadosTerminalViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAARAAQkAAAAggOgIAAAAwAEAAwBNAAAAAAQGQAAA=</HashCode>
+      <FileName>ViewModels\DadosTerminalViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.DialogoViewModel" Collapsed="true">
+    <Position X="8.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CABAAAQAACAAAAAAAIAAAAQAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DialogoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.FimConfiguracaoViewModel" Collapsed="true">
+    <Position X="10" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FimConfiguracaoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.InicioConfiguracaoViewModel" Collapsed="true">
+    <Position X="6.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\InicioConfiguracaoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.InitialViewModel" Collapsed="true">
+    <Position X="10" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAgAAAAAABAgAAABCgAAAIASEAAAAAAAAAAJA=</HashCode>
+      <FileName>ViewModels\InitialViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.InstalacaoWebServiceViewModel" Collapsed="true">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAADAAA=</HashCode>
+      <FileName>ViewModels\InstalacaoWebServiceViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.ListaTerminaisViewModel" Collapsed="true">
+    <Position X="15.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAAgAgAAACAAAAAAA8QAABgBgSAAAMAABAAgKMAEAA=</HashCode>
+      <FileName>ViewModels\ListaTerminaisViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.MessageBoxViewModel" Collapsed="true">
+    <Position X="8.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAKAAEAAAAAAAAQAAAAAAAAAAgABAAAAAAA=</HashCode>
+      <FileName>ViewModels\MessageBoxViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.ModalDialogViewModel" Collapsed="true">
+    <Position X="15.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ISgAgAAAAAAAAAAIAAAAAAAAAAAAAAQMAAAAAAACAQA=</HashCode>
+      <FileName>ViewModels\ModalDialogViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.RegistoAppViewModel" Collapsed="true">
+    <Position X="6.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAABAAAAIAAAAABAQAAAAAAAAACAAAA=</HashCode>
+      <FileName>ViewModels\RegistoAppViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.ServerConfigViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAYIAAAEWAAAEAAIQDIAgIAIIAJMFAAQgoACQAoA=</HashCode>
+      <FileName>ViewModels\ServerConfigViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.ViewModels.ShellViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAACCoAAAEAwAKEAIAggCACoAgMAIIACoRiAABA=</HashCode>
+      <FileName>ViewModels\ShellViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BackEndAplication.Views.ConfiguracaoWebServerView" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ConfiguracaoWebServerView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.DadosPhcView" Collapsed="true">
+    <Position X="11.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DadosPhcView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.DadosTerminalView" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DadosTerminalView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.DialogoView" Collapsed="true">
+    <Position X="6.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\DialogoView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.FimConfiguracaoView" Collapsed="true">
+    <Position X="10" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FimConfiguracaoView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.InicioConfiguracaoView" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\InicioConfiguracaoView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.InitialView" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\InitialView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.InstalacaoWebServiceView" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\InstalacaoWebServiceView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.ListaTerminaisView" Collapsed="true">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ListaTerminaisView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.MessageBoxView" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MessageBoxView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.ModalDialogView" Collapsed="true">
+    <Position X="13.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ModalDialogView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.RegistoAppView" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\RegistoAppView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.ServerConfigView" Collapsed="true">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ServerConfigView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.ShellView" Collapsed="true">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\ShellView.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BackEndAplication.Views.SplashWindow" Collapsed="true">
+    <Position X="11.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgABAAAAAAAAEBAAAAAgAAEEAAAQAAAAQAAAAAAA=</HashCode>
+      <FileName>Views\SplashWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BackEndAplication.IShell" Collapsed="true">
+    <Position X="10" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IShell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BackEndAplication.Service.IDataService" Collapsed="true">
+    <Position X="19" Y="6.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAQAgAAAAgQAkAAOABAAAAAIAAAAAQAAAECAgA=</HashCode>
+      <FileName>Service\IDataService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BackEndAplication.Service.IMockData" Collapsed="true">
+    <Position X="22.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Service\IMockData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BackEndAplication.Service.IRemoteService" Collapsed="true">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\IRemoteService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BackEndAplication.Events.AppMessageType" Collapsed="true">
+    <Position X="12.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAQAAIAAAIAEAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\AppMessage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BackEndAplication.Events.EventoTipo" Collapsed="true">
+    <Position X="12.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAABAQAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoBackend.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BackEndAplication.Events.AccaoEfectuada" Collapsed="true">
+    <Position X="13.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAQAAAAAAAAAAABIAAAIAQEAIAAAAAAAAAAEA=</HashCode>
+      <FileName>Events\EventoChangeActiveViewTerminal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BackEndAplication.Events.EventoSeleccionado" Collapsed="true">
+    <Position X="12.75" Y="9.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Events\EventoEncerramento.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BackEndAplication.Events.TipoEventoModal" Collapsed="true">
+    <Position X="12.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Events\EventoModal.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="BackEndAplication.Events.TipoSelected" Collapsed="true">
+    <Position X="12.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Events\EventoSelectedData.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

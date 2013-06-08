@@ -1,0 +1,55 @@
+﻿<Window x:Class="BackEndAplication.Views.ShellView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:cal="http://www.caliburnproject.org"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        cal:Message.Attach="[Event Loaded]=[Action GetConfigData]" WindowStartupLocation="CenterScreen" 
+        Title="{Binding Title}"
+        Height="{Binding ShellHeight,Mode=TwoWay,FallbackValue=600}" 
+        Width="{Binding ShellWidth,Mode=TwoWay,FallbackValue=800}"
+        ResizeMode="CanMinimize">
+    
+    
+    
+  <!--possivelmente alterar para o modelo de dados do caliburn na funcao override o evento acima(getConfigData)-->
+   
+  <!-- <Window.Resources>
+        <Storyboard x:Key="showStoryBoard">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty=
+		"(FrameworkElement.Margin)" Storyboard.TargetName="txtLoading">
+                <EasingThicknessKeyFrame KeyTime="0:0:0" Value="0,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="0,0,0,70"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="hideStoryBoard">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty=
+		"(FrameworkElement.Margin)" Storyboard.TargetName="txtLoading">
+                <EasingThicknessKeyFrame KeyTime="0:0:0" Value="0,0,0,70"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1" Value="0,0,0,150"/>
+            </ThicknessAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources> -->
+  <Grid>
+    <!--<TextBlock x:Name="Title" />-->
+    <ContentControl x:Name="ActiveItem" Margin="1,1,1,12" VerticalContentAlignment="Stretch"
+                    HorizontalContentAlignment="Stretch" />
+
+    <!-- mudar isto desacoplar os conteudos da grid e talvez converter para canvas e possivelmente implementar o enabled do botao para uma propriedade-->
+    <Grid Margin="1,0,0,1.575" Height="40.425" VerticalAlignment="Bottom"
+          Visibility="{Binding NavisVisible,Converter={StaticResource BCVisibilityConverter},FallbackValue=Hidden}">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="0.247*" />
+        <ColumnDefinition Width="0.753*" />
+      </Grid.ColumnDefinitions>
+      <Button Content="Seguinte" x:Name="btnSeguinte" cal:Message.Attach="[Event Click]=[Action Seguinte]"
+              Height="30" Width="100" Margin="472,6.925,12,3.5" Grid.Column="1" d:LayoutOverrides="VerticalAlignment" />
+      <Button x:Name="btnAnterior" Content="Anterior" cal:Message.Attach="[Event Click]=[Action Anterior]"
+              Height="30" Width="100" Margin="348,6,0,4.425" Grid.Column="1" d:LayoutOverrides="VerticalAlignment"
+              HorizontalAlignment="Left" />
+
+      <TextBlock Name="Progresso" Width="524" Height="30" HorizontalAlignment="Left" Margin="2,5.925,0,0"
+                 VerticalAlignment="Top" d:LayoutOverrides="Height" Grid.ColumnSpan="2" FontSize="14" TextAlignment="Center"></TextBlock>
+    </Grid>
+
+
+  </Grid>
+</Window>

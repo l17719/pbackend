@@ -1,0 +1,154 @@
+﻿<UserControl x:Class="BackEndAplication.Views.DadosPhcView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cal="http://www.caliburnproject.org"
+             mc:Ignorable="d" Height="600" Width="600"
+             d:DesignHeight="600" d:DesignWidth="600">
+
+    <Grid>
+
+        <Canvas x:Name="CnvMain" Margin="1,1,1,1">
+            <GroupBox x:Name="grpBoxDadosEncomenda"
+                Header="Parametros Encomenda" Canvas.Left="249" Canvas.Top="69"
+                Height="76.625" Width="220.143">
+                <Canvas x:Name="cnvDados" Margin="0,0,0,47.333" Height="56">
+                    <Label x:Name="lblNumeroEncomendaIni" 
+                 Content="Numero Encomendas: " />
+                    <TextBox x:Name="TxtEncomendaInicio"
+                   Width="80.5" Canvas.Top="27" Canvas.Left="3" />
+                    <Label x:Name="lblAEncomendas" 
+                 Content="até: " Canvas.Left="87.615" Canvas.Top="24" />
+
+                    <TextBox x:Name="TxtEncomendaFinal"
+                   Width="80.5" Canvas.Top="27" Canvas.Left="124.619" />
+                </Canvas>
+
+            </GroupBox>
+            <GroupBox x:Name="grpArmazem" Header="Dados Armazem" Canvas.Left="12" Canvas.Top="68" Height="136.562"
+                Width="187">
+                <Canvas x:Name="cnvArmazem" Width="172">
+                    <Label x:Name="lblArmazemEnvio" Content="Armazem envio encomenda" Canvas.Top="57.5" />
+                    <Label x:Name="lblArmazemRegisto" Content="Armazem registo encomenda" Canvas.Top="2"
+                 Canvas.Left="-0.5" />
+                    <TextBox x:Name="TxtArmazemRegisto" Width="80" Canvas.Top="26" Canvas.Left="4" />
+                    <TextBox x:Name="TxtArmazemEnvio" Width="80" Canvas.Top="85.5" Canvas.Left="4.5" />
+
+                </Canvas>
+            </GroupBox>
+            <GroupBox Header="Parametros Clientes" x:Name="grpDadosClientes" Canvas.Left="248" Canvas.Top="156"
+                Height="76.953" Width="220.87">
+                <Canvas x:Name="cnvDadosCliente">
+                    <Label x:Name="lblNumeroInicialCliente" Content="Numero Clientes: " Canvas.Top="1" Canvas.Left="3" />
+                    <TextBox x:Name="TxtNumeroInicialCliente" Width="80.5" Canvas.Top="26.5"
+                   ToolTip="Numero inicial de clientes" Canvas.Left="8" />
+                    <Label x:Name="lblAClientes" Content="até: " Canvas.Top="25.5" Canvas.Left="85" />
+                    <TextBox x:Name="TxtNumeroFinalCliente" Width="80.5" Canvas.Top="27" Canvas.Left="114"
+                   ToolTip="Numero final de clientes" />
+                </Canvas>
+
+            </GroupBox>
+            <GroupBox x:Name="grpFiltros" Header="Dados Filtros" Canvas.Top="327" Canvas.Left="14" Width="219.477"
+                Height="127.72">
+                <Canvas x:Name="CnvFiltros">
+                    <Label x:Name="lblFiltroCliente" Content="Clientes" />
+                    <ComboBox x:Name="CbFiltrosPhcCliente" 
+                              SelectedItem="{Binding SelectedCbFiltrosPhcCliente,Mode=TwoWay}"
+                    Width="207.477" Canvas.Top="27" />
+                    <Label x:Name="lblFiltroStock" Content="Artigos" Canvas.Top="52" />
+                    <ComboBox x:Name="CbFiltrosPhcStock"
+                              SelectedItem="{Binding SelectedCbFiltrosPhcStock,Mode=TwoWay}"
+                    DisplayMemberPath="" Width="207.477" Canvas.Top="79" />
+                </Canvas>
+            </GroupBox>
+
+
+            <GroupBox Header="Parametrizacoes Terminal" x:Name="grpParamTerminal" Canvas.Left="250" Canvas.Top="245"
+                Height="127.72">
+                <StackPanel x:Name="stParametrizacoes" Canvas.Left="419.733" Canvas.Top="242">
+
+
+                    <CheckBox x:Name="chkSincCCNaoRegula" Content="Sincronizar conta corrente não regularizada"
+                    IsChecked="{Binding IschkSincCcNaoRegula,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkEliminaEncomenda" Content="Permite eliminar encomendas"
+                    IsChecked="{Binding IschkEliminaEncomenda,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkAltPrecoVenda" Content="Permite alterar precos venda"
+                    IsChecked="{Binding IschkAltPrecoVenda,Mode=OneWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkIntroCompSinc" Content="Introduzir componente ao sincronizar"
+                    IsChecked="{Binding IschkIntroCompSinc,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkMostraDataLinhas" Content="Mostra data nas linhas de encomenda"
+                    IsChecked="{Binding IschkMostraDataLinhas,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkInsereNovaLinha" Content="Cria nova linha após digitar quantidade"
+                    IsChecked="{Binding IschkInsereNovaLinha,Mode=TwoWay,FallbackValue=False}" />
+
+
+                </StackPanel>
+            </GroupBox>
+
+
+            <Label x:Name="lblNumTerminal" Content="Numero Terminal" Canvas.Left="8.5" Canvas.Top="8" />
+            <TextBox x:Name="lblTerminalId" Text="{Binding NumTerminalId,Mode=TwoWay}" Canvas.Left="125.799"
+             Canvas.Top="13" Width="250" Height="21" IsEnabled="False" />
+            <Label x:Name="lblDataNumDossier" Content="Dossier Interno" Canvas.Left="15" Canvas.Top="36" />
+            <ComboBox x:Name="CbNumDossier" SelectedItem="{Binding SelectedCbNumDossier,Mode=TwoWay}" Canvas.Left="125"
+                Canvas.Top="40" Width="82.639" />
+            <TextBox Canvas.Left="219" Canvas.Top="40"
+                     Name="LblNomeDossier" Width="250"
+             Text="{Binding TxtNomeDossier,Mode=TwoWay}" 
+                     IsEnabled="False" />
+            <Canvas x:Name="CnvOpcoes" Height="35.53" Canvas.Left="5" Canvas.Right="2" Canvas.Top="550" Width="493">
+                <Button x:Name="BtnSave" Width="50" Height="30" Content="Guardar"
+                cal:Message.Attach="[Event Click]=[Action SaveDadosPhc]" Canvas.Top="1" Canvas.Left="369.495" />
+                <Button x:Name="BtnCancel" cal:Message.Attach="[Event Click]=[Action CancelData]" Width="57.333" Height="30"
+                Content="Cancelar" Canvas.Top="1" Canvas.Left="435.292" />
+            </Canvas>
+            <GroupBox Header="Dados Descontos" x:Name="GbDadosDescontos" Canvas.Top="378" Canvas.Left="255">
+                <StackPanel x:Name="stPrecos" Orientation="Vertical">
+                    <CheckBox x:Name="chkUsaPrecoU" Content="Usa Preco 1"
+                    IsChecked="{Binding IschkUsaPrecoU,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkUsaPrecoD" Content="Usa Preco 2"
+                    IsChecked="{Binding IschkUsaPrecoD,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkUsaPrecoT" Content="Usa Preco 3"
+                    IsChecked="{Binding IschkUsaPrecoT,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkUsaPrecoQ" Content="Usa Preco 4"
+                    IsChecked="{Binding IschkUsaPrecoQ,Mode=TwoWay,FallbackValue=False}" />
+                    <CheckBox x:Name="chkUsaPrecoC" Content="Usa Preco 5"
+                    IsChecked="{Binding IschkUsaPrecoC,Mode=TwoWay,FallbackValue=False}" />
+                    <Label x:Name="lblNumeroDescontos" Content="Numero Descontos" />
+
+                    <TextBox x:Name="TxtNumMaxDesconto" IsEnabled="False" />
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Canvas.Left="383" Canvas.Top="378" Header="Dados Vendedor" Height="135" Name="grpVendedor"
+                Width="194">
+                <StackPanel Height="103" Name="cnvVendedor" Orientation="Vertical">
+                    <Label Canvas.Top="4" Content="Vendedores: " />
+                    <ComboBox Name="CbNumVendedor" SelectedItem="{Binding SelectedCbNumVendedor, Mode=TwoWay}" />
+                    <Label Canvas.Top="4" Content="Num. Vendedor: " />
+                    <TextBox Canvas.Left="217" Canvas.Top="7" 
+                             Name="TxtNumVendedor" IsEnabled="False" />
+
+                </StackPanel>
+            </GroupBox>
+        </Canvas>
+        <GroupBox Header="Retencao Encomendas" x:Name="grpDadosReter" Height="112" Margin="14,205,367,283">
+            <Canvas x:Name="CnvParamEnc" Canvas.Top="3" Canvas.Left="-47" Height="84" VerticalAlignment="Top"
+              HorizontalAlignment="Left" Width="212.48">
+                <RadioButton x:Name="rbReterTodas"
+                              IsChecked="{Binding IsrbReterTodas,Mode=TwoWay,FallbackValue=False}"
+                     Content="Reter todas" GroupName="RbTodas" Canvas.Top="9.281" />
+                <RadioButton x:Name="rbReterUltimas" Content="Reter as ultimas"
+                     IsChecked="{Binding IsrbReterUltimas,Mode=TwoWay,FallbackValue=False}"
+                             GroupName="RbUltimas" Canvas.Top="34" />
+                <TextBox x:Name="TxtEncomendasRetidas"
+                 IsEnabled="{Binding IsTxtEncomendasRetidas,Mode=TwoWay,FallbackValue=False}" Width="80" Canvas.Top="34"
+                 Canvas.Left="117" />
+                <RadioButton x:Name="rbEliminaSinc"
+                     IsChecked="{Binding IsrbEliminaSinc,Mode=TwoWay,FallbackValue=False}" 
+                             GroupName="RbDel"
+                     Content="Eliminar após Sincronizar" Canvas.Top="58" Canvas.Left="1" />
+            </Canvas>
+        </GroupBox>
+    </Grid>
+</UserControl>

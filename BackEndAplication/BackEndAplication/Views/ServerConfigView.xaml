@@ -1,0 +1,121 @@
+﻿<UserControl x:Class="BackEndAplication.Views.ServerConfigView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:cal="http://www.caliburnproject.org"
+             xmlns:properties="clr-namespace:BackEndAplication.Utilities.AttachedProperties"
+             cal:Message.Attach="[Event Loaded]=[Action SetLocalOptions]" mc:Ignorable="d" d:DesignHeight="500" d:DesignWidth="500"
+             Height="500" Width="500">
+
+  <Grid x:Name="LayoutRoot">
+    <!--<Canvas x:Name="cnvRoot">
+            <Label x:Name="lblInfo" Content="Seleccione uma das seguintes opcoes" Height="25.04" VerticalAlignment="Top" Margin="0,3,0,0"/>
+            <Button x:Name="btnLocalServer" Content="Servidor Local" Height="30" Canvas.Top="30" Canvas.Left="10"
+                    cal:Message.Attach="[Event Click]=[Action SetLocalOptions]"/>
+            <Button x:Name="btnRemoteServer" Content="Servidor Remoto" Height="30" Canvas.Top="30" Canvas.Left="120"
+                    cal:Message.Attach="[Event Click]=[Action SetRemoteOptions]"/>
+           
+        </Canvas>-->
+    <!--<Border x:Name="brdIsVisible" Margin="10,80,10,10">-->
+            
+    <!--teste
+        <Border x:Name="brdIsVisible" Margin="10,10,10,10">
+            <Canvas x:Name="cvnSQLDATA" Margin="10,10,10,10" Height="349">
+                <Label x:Name="lbDados" Content="Dados Servidor" FontSize="12" FontStyle="Normal" Canvas.Top="1" Canvas.Left="3"/>
+                <Label x:Name="lblInstancia" Content="Instancias SQL" Canvas.Top="25" Canvas.Left="4" />
+                <ComboBox x:Name="CbInstanciasSQL" Canvas.Left="159" Canvas.Top="25" Width="280" Height="25" />
+                
+                <Border x:Name="brdDadosUser">
+                    <Canvas x:Name="cnvDadosUser" >
+                        <Button x:Name="btnUseCurrent" Content="Utilizar este utilizador"
+                               cal:Message.Attach="[Event Click]=[Action ObtemUser]" Canvas.Left="16.5" Canvas.Top="78"/>
+                        <Button x:Name="btnSetUser" Content="Digitar nome Utilizador"
+                                cal:Message.Attach="[Event Click]=[Action MostraDados]" Canvas.Top="78" Canvas.Left="304.5"/>
+                    </Canvas>
+                </Border>
+                <Border x:Name="brdRemoteUserData">
+                    <Canvas>
+                        <Label Content="Nome Utilizador" x:Name="lblNomeUser" Canvas.Left="4" Canvas.Top="122.5" Width="150" 
+						FontSize="12" FontStyle="Normal" />
+                        <TextBox x:Name="TxtNomeUser" Canvas.Top="123.5" Canvas.Left="160" Width="280"  />
+                        <Label Content="Password" x:Name="lblPassword" Canvas.Left="4"
+						 Canvas.Top="147.5" Width="150"  FontSize="12" FontStyle="Normal"/>
+                        <PasswordBox x:Name="PboxSqlPwd" Canvas.Left="160" Canvas.Top="154.5" Width="280"
+                                     cal:Message.Attach="[Event PasswordChanged]=[Action PasswordChanged($source)];[Event LostFocus]=[Action SetCustomSqlConfig]"
+                                     properties:PasswordBoxHelper.Attach="True"/>
+                       
+                    </Canvas>
+
+                </Border>
+                <Border x:Name="brdSelectDb">
+                    <Canvas x:Name="cnvSelectDb">
+                        <Label x:Name="lblDatabase" Content="Nome Base Dados" Canvas.Top="184.96" Canvas.Left="5.5"/>
+                        <ComboBox x:Name="CbDatabase" Canvas.Left="160.5" Canvas.Top="190" Width="280" Height="25"/>
+                    </Canvas>
+                </Border>
+                <Border x:Name="brdSetOptions">
+                    <Canvas x:Name="cnvSetOptions">
+                        <Button x:Name="btnSaveWSConfig" Content="Guardar Configuração"
+                                cal:Message.Attach="[Event Click]=[Action GuardaConfig]" Canvas.Top="306" Canvas.Left="309"
+                    />
+                    </Canvas>
+                    
+                </Border>
+               
+            </Canvas>
+           
+        </Border>-->
+
+        
+    <Canvas x:Name="cvnSQLDATA" Margin="10,10,10,10" Height="349"
+            Visibility="{Binding BrdIsVisible, Converter={StaticResource BCVisibilityConverter},FallbackValue=Hidden}">
+            <Label x:Name="lbInformation" Content="Configuracao Ligação da Base de dados"
+               FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="lbDados" Content="Dados Servidor" FontSize="12" FontStyle="Normal" Canvas.Top="64"
+             Canvas.Left="3" />
+      <Label x:Name="lblInstancia" Content="Instancias SQL" Canvas.Top="88" Canvas.Left="4" />
+      <ComboBox x:Name="CbInstanciasSQL" Canvas.Left="159" Canvas.Top="88" Width="280" Height="25" />
+
+
+      <Canvas x:Name="cnvDadosUser"
+              Visibility="{Binding BrdDadosUser,Converter={StaticResource BCVisibilityConverter},FallbackValue=Hidden}">
+        <Button x:Name="btnUseCurrent" Content="Utilizar este utilizador"
+                cal:Message.Attach="[Event Click]=[Action ObtemUser]" Canvas.Left="16.5" Canvas.Top="141" />
+        <Button x:Name="btnSetUser" Content="Digitar nome Utilizador"
+                cal:Message.Attach="[Event Click]=[Action MostraDados]" Canvas.Top="141" Canvas.Left="304.5" />
+      </Canvas>
+
+
+      <Canvas x:Name="cnvRemote"
+              Visibility="{Binding BrdRemoteUserData,Converter={StaticResource BCVisibilityConverter },FallbackValue=Hidden}">
+        <Label Content="Nome Utilizador" x:Name="lblNomeUser" Canvas.Left="4" Canvas.Top="186"
+               Width="150" FontSize="12" FontStyle="Normal" />
+        <TextBox x:Name="TxtNomeUser" Canvas.Top="186" Canvas.Left="160" Width="280" />
+        <Label Content="Password" x:Name="lblPassword" Canvas.Left="4" Canvas.Top="210" Width="150"
+               FontSize="12" FontStyle="Normal" />
+        <PasswordBox x:Name="PboxSqlPwd" Canvas.Left="160" Canvas.Top="218" Width="280"
+                     cal:Message.Attach="[Event PasswordChanged]=[Action PasswordChanged($source)];[Event LostFocus]=[Action SetCustomSqlConfig]"
+                     properties:PasswordBoxHelper.Attach="True" ToolTip="Carregue na tecla Tab(tabulação) para guardar os dados" />
+
+      </Canvas>
+
+
+      <Canvas x:Name="cnvSelectDb"
+              Visibility="{Binding BrdSelectDb,Converter={StaticResource BCVisibilityConverter},FallbackValue=Hidden}">
+        <Label x:Name="lblDatabase" Content="Nome Base Dados" Canvas.Top="248" Canvas.Left="5.5" />
+        <ComboBox x:Name="CbDatabase" Canvas.Left="160.5" Canvas.Top="253" Width="280" Height="25" />
+      </Canvas>
+
+
+      <Canvas x:Name="cnvSetOptions"
+              Visibility="{Binding BrdSetOptions,Converter={StaticResource BCVisibilityConverter},FallbackValue=Hidden}">
+        <Button x:Name="btnSaveWSConfig" Content="Guardar Configuração"
+                cal:Message.Attach="[Event Click]=[Action GuardaConfig]" Canvas.Top="306" Canvas.Left="309" />
+      </Canvas>
+
+
+    </Canvas>
+
+
+  </Grid>
+</UserControl>
