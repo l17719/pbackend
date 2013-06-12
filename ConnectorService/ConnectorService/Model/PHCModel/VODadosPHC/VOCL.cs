@@ -75,6 +75,8 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
 
         [DataMember(IsRequired = true, Name = "contacto", Order = 22)]
         public string Contacto { get; set; }
+
+       
     }
 
 

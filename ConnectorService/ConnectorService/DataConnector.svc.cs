@@ -960,10 +960,23 @@ namespace ConnectorService
                 
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                
-                throw;
+
+                if (e.InnerException == null)
+                {
+                    _logManager.WriteError(1200, "WorkerDevolveTaxas: Ocorreu o seguinte erro ao devolver os dados para o terminal:" + e.Source + " \n" + e.Message);
+                }
+                else
+                {
+                    _logManager.WriteError(1200, "WorkerDevolveTaxas: Ocorreu o seguinte erro ao devolver os dados para o terminal:" + e.Source + " \n" + e.InnerException);
+                }
+
+                throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
+                {
+                    DataMessage = "Ocorreu um erro ao obter os dados para devolver para o terminal",
+                    DataDetails = "Nao foi possivel completar o pedido a base de dados. Tente mais tarde"
+                });
             }
             return resultado;
         }

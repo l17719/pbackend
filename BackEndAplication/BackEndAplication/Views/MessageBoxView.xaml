@@ -1,14 +1,15 @@
 ﻿<Window x:Class="BackEndAplication.Views.MessageBoxView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:cal="http://www.caliburnproject.org" Height="300"
-        Width="300" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow" ResizeMode="NoResize">
+        Width="300" WindowStartupLocation="CenterOwner" WindowStyle="ToolWindow" ResizeMode="NoResize"
+        Title="{Binding MessageTitle,Mode=TwoWay}">
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
       <RowDefinition Height="Auto" />
     </Grid.RowDefinitions>
-    <Label Content="{Binding Path=MessageTitle}" />
+    
     <TextBlock Grid.Row="1" Text="{Binding Path=MessageboxMessage}" TextWrapping="Wrap" Margin="6,6,0,0" />
     <StackPanel Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,10,10" Orientation="Horizontal">
       <!--<Button Width="30" Margin="10,10,0,0" Visibility="{Binding Path=IsYesButtonVisible}" cal:Message.Attach="Yes" Content="Yes" />

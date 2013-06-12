@@ -298,9 +298,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <Content Include="ServiceSetup\ConnectorServiceSetup.msi">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <None Include="ServiceSetup\BackEndConnectorSetup.msi" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Lib\" />
@@ -310,9 +308,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="imgs\ApplicationIcon.png" />
-    <Content Include="ServiceSetup\setup.exe">
+    <Content Include="ServiceSetup\setup.exe" />
+    <Resource Include="imgs\Info.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

@@ -10,6 +10,10 @@
     <Grid>
 
         <Canvas x:Name="CnvMain" Margin="1,1,1,1">
+            <Button x:Name="BtnHelp" Width="32" Height="32" cal:Message.Attach="[Event Click]=[Action ShowHelp]" 
+                    Canvas.Left="557" Canvas.Top="3" Content="?">
+                
+            </Button>
             <GroupBox x:Name="grpBoxDadosEncomenda"
                 Header="Parametros Encomenda" Canvas.Left="249" Canvas.Top="69"
                 Height="76.625" Width="220.143">
@@ -59,7 +63,7 @@
                     <Label x:Name="lblFiltroStock" Content="Artigos" Canvas.Top="52" />
                     <ComboBox x:Name="CbFiltrosPhcStock"
                               SelectedItem="{Binding SelectedCbFiltrosPhcStock,Mode=TwoWay}"
-                    DisplayMemberPath="" Width="207.477" Canvas.Top="79" />
+                    DisplayMemberPath="" Width="207.477" Canvas.Top="79" ToolTip="Antes de seleccionar um filtro PHC, verifique se o filtro obedece aos moldes, se está de acordo com este molde"/>
                 </Canvas>
             </GroupBox>
 

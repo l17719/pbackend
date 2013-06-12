@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 using System.Globalization;
 using BackEndAplication.Events;
 using BackEndAplication.Models.TerminalDBModel;
 using BackEndAplication.Service;
+using BackEndAplication.Utilities;
 using Caliburn.Micro;
 
 namespace BackEndAplication.ViewModels
@@ -36,6 +38,9 @@ namespace BackEndAplication.ViewModels
         private string _txtEncomendasRetidas;
         private string _txtNumMaxDesconto;
         private string _txtNumVendedor;
+
+       
+
 
 
         public bool IsUpdatingDataPhc
@@ -536,6 +541,25 @@ namespace BackEndAplication.ViewModels
         //    //Task<bool>.Factory.StartNew(LoadFiltros);
         //    //Task<bool>.Factory.StartNew(LoadDataDossiers);
         //}
+
+
+        public void ShowHelp()
+        {
+            Coroutine.BeginExecute(MostraInfoDialogo().GetEnumerator());
+        }
+
+
+        public IEnumerable<IResult> MostraInfoDialogo()
+        {
+            yield return new ShowDialog<MessageBoxViewModel>()
+                .ConfigureWith(x => x.MessageboxMessage = "Antes de escolher qualquer filtro, verifique se estes se encontram no seguinte formato:\n"+
+            "INACTIVO  <>  @0  and  vendedor  = @1,bol1,r10.00 \n"+
+            "substitua os valores da seguinte forma:\n" +
+            "bol para valores booleanos, r para numeros decimais,\n" +
+                                                          " i para valores inteiros e" +
+                                                          "\n ch sem plicas para caracteres",
+                               t => t.MessageTitle = "Informacao Backend Application");
+        }
         #region CarregaDados
         private bool LoadFiltros()
         {
@@ -544,7 +568,7 @@ namespace BackEndAplication.ViewModels
             CbNumDossier = _service.CarregaDossiersInternos();
             CbNumVendedor = _service.LoadVendedores();
 
-           
+
 
             return CbFiltrosPhcCliente != null && CbFiltrosPhcStock != null && CbNumVendedor != null;
         }
@@ -553,8 +577,10 @@ namespace BackEndAplication.ViewModels
         #region FrameworkMethod
         protected override void OnActivate()
         {
+
             EventAggregationProvider.Aggregator.Subscribe(this);
             base.OnActivate();
+            //HelpImgpath = new Uri(@"BackEndAplication;component/imgs/Info.png", UriKind.RelativeOrAbsolute);
             LoadFiltros();
         }
 
@@ -620,8 +646,8 @@ namespace BackEndAplication.ViewModels
                 tmpOpterminal = new TbOpcoesTerminal
                 {
                     Id = PhcSelectedOp.Id,
-                    PhcNomeFiltroArtigos = DevolveDefaultFiltros("St",SelectedCbFiltrosPhcStock),
-                    PhcNomeFiltroClientes = DevolveDefaultFiltros("CL",SelectedCbFiltrosPhcCliente),
+                    PhcNomeFiltroArtigos = DevolveDefaultFiltros("St", SelectedCbFiltrosPhcStock),
+                    PhcNomeFiltroClientes = DevolveDefaultFiltros("CL", SelectedCbFiltrosPhcCliente),
                     ArmazemEnvio = DevolveArmazemDefault(TxtArmazemEnvio),
                     ArmazemRegisto = DevolveArmazemDefault(TxtArmazemRegisto),
                     CriaLinhaEncomenda = IschkInsereNovaLinha,
@@ -655,14 +681,14 @@ namespace BackEndAplication.ViewModels
                 tmpOpterminal = new TbOpcoesTerminal
                 {
                     Id = Guid.NewGuid(),
-                    PhcNomeFiltroArtigos = DevolveDefaultFiltros("St",SelectedCbFiltrosPhcStock),
-                    PhcNomeFiltroClientes = DevolveDefaultFiltros("CL",SelectedCbFiltrosPhcCliente),
+                    PhcNomeFiltroArtigos = DevolveDefaultFiltros("St", SelectedCbFiltrosPhcStock),
+                    PhcNomeFiltroClientes = DevolveDefaultFiltros("CL", SelectedCbFiltrosPhcCliente),
                     ArmazemEnvio = DevolveArmazemDefault(TxtArmazemEnvio),
                     ArmazemRegisto = DevolveArmazemDefault(TxtArmazemRegisto),
                     CriaLinhaEncomenda = IschkInsereNovaLinha,
                     UsaPreco5 = IschkUsaPrecoC,
                     UsaPreco2 = IschkUsaPrecoD,
-                    UsaPreco1= IschkUsaPrecoU,
+                    UsaPreco1 = IschkUsaPrecoU,
                     UsaPreco3 = IschkUsaPrecoT,
                     UsaPreco4 = IschkUsaPrecoQ,
                     AlterarPrecoVenda = IschkAltPrecoVenda,
@@ -681,7 +707,7 @@ namespace BackEndAplication.ViewModels
                     PhcNumDossierInterno = DevolveDefaultNumeroDossier(),
                     PhcNomeDossierInterno = DevolveDefaultNomeDossier(),
                     IniciaisUs = DevolveDefaultIniciaisUs(),
-                     
+
                     SincronizaCcNaoRegula = IschkSincCcNaoRegula
                 };
 
@@ -690,8 +716,8 @@ namespace BackEndAplication.ViewModels
             }
 
         }
-        
-        
+
+
 
         #endregion
 
@@ -764,15 +790,15 @@ namespace BackEndAplication.ViewModels
             return string.IsNullOrEmpty(value) ? 0 : Convert.ToInt32(value);
         }
 
-        private  string DevolveDefaultFiltros(string valueFiltro,string value)
+        private string DevolveDefaultFiltros(string valueFiltro, string value)
         {
-            if ((string.IsNullOrEmpty(value))||(value=="Sem valor Definido"))
+            if ((string.IsNullOrEmpty(value)) || (value == "Sem valor Definido"))
             {
                 return "Sem valor Definido";
             }
             return valueFiltro == "St" ? _service.DevolveStampFiltroStocks(value).Trim() : _service.DevolveStampFiltroClientes(value).Trim();
-           
-            
+
+
         }
         #endregion
 
@@ -820,7 +846,7 @@ namespace BackEndAplication.ViewModels
             TxtNumeroInicialCliente = PhcSelectedOp.NumeroInicioClientes.ToString(CultureInfo.InvariantCulture);
             TxtNumeroFinalCliente = PhcSelectedOp.NumeroFimClientes.ToString(CultureInfo.InvariantCulture);
             NumTerminalId = _service.DevolveNumTerminal(PhcSelectedOp.Id);
-            
+
             switch (PhcSelectedOp.TipoRetencaoEncomendas)
             {
                 case "T":
@@ -882,14 +908,14 @@ namespace BackEndAplication.ViewModels
             }
             SelectedCbNumDossier = (int)PhcSelectedOp.PhcNumDossierInterno;
             SelectedCbNumVendedor = PhcSelectedOp.NumVendedor;
-            SelectedCbFiltrosPhcCliente = InjectaFiltro("CL",PhcSelectedOp.PhcNomeFiltroClientes);
-            SelectedCbFiltrosPhcStock = InjectaFiltro("ST",PhcSelectedOp.PhcNomeFiltroArtigos);
+            SelectedCbFiltrosPhcCliente = InjectaFiltro("CL", PhcSelectedOp.PhcNomeFiltroClientes);
+            SelectedCbFiltrosPhcStock = InjectaFiltro("ST", PhcSelectedOp.PhcNomeFiltroArtigos);
 
         }
 
         private string InjectaFiltro(string valueTipoFiltro, string value)
         {
-            if ((string.IsNullOrEmpty(value))||(value=="Sem valor Definido"))
+            if ((string.IsNullOrEmpty(value)) || (value == "Sem valor Definido"))
             {
                 return "Sem valor Definido";
             }

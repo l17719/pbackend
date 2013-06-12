@@ -95,6 +95,7 @@ namespace ConnectorService
 
         DadosTerminal EndGetTaxas(IAsyncResult result);
         #endregion
+
         #region Clientes e Stocks e Contas Correntes
         /// <summary>
         /// metodo para obter os dados dos clientes e stocks numa unica chamada remota. anteriormente duas
