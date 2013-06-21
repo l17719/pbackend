@@ -129,7 +129,7 @@
                 <StackPanel Height="103" Name="cnvVendedor" Orientation="Vertical">
                     <Label Canvas.Top="4" Content="Vendedores: " />
                     <ComboBox Name="CbNumVendedor" SelectedItem="{Binding SelectedCbNumVendedor, Mode=TwoWay}" />
-                    <Label Canvas.Top="4" Content="Num. Vendedor: " />
+                    <Label Canvas.Top="4" Content="Nome Vendedor: " />
                     <TextBox Canvas.Left="217" Canvas.Top="7" 
                              Name="TxtNumVendedor" IsEnabled="False" />
 

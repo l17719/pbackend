@@ -473,7 +473,7 @@ namespace BackEndAplication.Service
         public string DevolveNomeFiltroClientes(string value)
         {
             var tmp= (from item in _dadosFiltrosClientes
-                    where item.Fltclstamp == value
+                    where item.Fltclstamp.Trim() == value
                       select item.Ftitulo).SingleOrDefault();
 
             return string.IsNullOrEmpty(tmp) ? "Sem Valor Definido" : tmp;
@@ -640,6 +640,7 @@ namespace BackEndAplication.Service
                 //        resultado = tmpData;
                 //    }
 
+                
                 var tmp = (from t in _listaIniciais
                            where t.Vendedor == value
                            select t.Iniciais).FirstOrDefault();
@@ -854,16 +855,28 @@ namespace BackEndAplication.Service
 
         public int DevolveValorDesconto(decimal value)
         {
-            if (_listaNumerosDescontos == null) return 0;
+            try
+            {
+                if (_listaNumerosDescontos == null) return 0;
 
-          
 
-            var tmp = (from t in _listaNumerosDescontos
-                       where t.Ndos == value
-                       select t.Ndos).FirstOrDefault();
+
+                var tmp = (from t in _listaNumerosDescontos
+                           where t.Ndos == value
+                           select t.Ndescs).FirstOrDefault();
+
+                return (int)tmp;
+            }
+            catch(Exception e)
+            {
+                EventAggregationProvider.Aggregator.Publish(e.InnerException != null
+                                                                ? new EventoBackend(EventoTipo.Erro, e.InnerException)
+                                                                : new EventoBackend(EventoTipo.Erro, e.Message));
+            }
+
+            return 0;
             
-            
-            return (int) tmp;
+
         }
         public decimal DevolveArmazem(int value)
         {

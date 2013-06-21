@@ -526,6 +526,7 @@ namespace BackEndAplication.ViewModels
                         SelectedOpTerminais = _service.GetEntityOpcoes(SelectedTerminal.FkIDOT);
                     }
                     //
+
                     ActivateItem(Items.Single(p => p.DisplayName == "DadosPhc"));
                     EventAggregationProvider.Aggregator.Publish(new EventoSelectedData(TipoSelected.PhcDataSelected,
                                                                                        null, SelectedOpTerminais));

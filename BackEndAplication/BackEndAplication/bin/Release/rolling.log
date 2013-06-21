@@ -1,8 +1,8 @@
 ----------------------------------------
-Timestamp: 10-06-2013 02:04:04
+Timestamp: 17-06-2013 16:04:13
 
 Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:04:04
+Timestamp: 17-06-2013 16:04:12
 Message: A carregar a aplicacao
 Category: Information
 Priority: 2
@@ -11,10 +11,10 @@ Severity: Information
 Title:BackEndApplication Information
 Machine: URIEL
 App Domain: BackEndAplication.vshost.exe
-ProcessId: 3580
+ProcessId: 3144
 Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
 Thread Name: 
-Win32 ThreadId:5740
+Win32 ThreadId:6444
 Extended Properties: 
 
 Category: 
@@ -31,21 +31,21 @@ Machine: URIEL
 
 App Domain: BackEndAplication.vshost.exe
 
-ProcessId: 3580
+ProcessId: 3144
 
 Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
 
 Thread Name: 
 
-Win32 ThreadId:5740
+Win32 ThreadId:6444
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 10-06-2013 02:07:42
+Timestamp: 17-06-2013 17:43:01
 
 Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:07:42
+Timestamp: 17-06-2013 17:43:01
 Message: A carregar a aplicacao
 Category: Information
 Priority: 2
@@ -54,10 +54,10 @@ Severity: Information
 Title:BackEndApplication Information
 Machine: URIEL
 App Domain: BackEndAplication.vshost.exe
-ProcessId: 5528
+ProcessId: 6344
 Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
 Thread Name: 
-Win32 ThreadId:5380
+Win32 ThreadId:5688
 Extended Properties: 
 
 Category: 
@@ -74,357 +74,13 @@ Machine: URIEL
 
 App Domain: BackEndAplication.vshost.exe
 
-ProcessId: 5528
+ProcessId: 6344
 
 Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
 
 Thread Name: 
 
-Win32 ThreadId:5380
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:20:16
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:20:16
-Message: A encerrar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1000
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5528
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:5380
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5528
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:5380
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:22:15
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:22:15
-Message: A carregar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1150
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5820
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:4624
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5820
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:4624
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:23:56
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:23:56
-Message: A encerrar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1000
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5820
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:4624
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5820
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:4624
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:36:34
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:36:34
-Message: A carregar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1150
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5940
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:5216
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5940
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:5216
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:42:57
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:42:57
-Message: A carregar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1150
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5912
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:5280
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5912
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:5280
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:44:52
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:44:52
-Message: A encerrar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1000
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 5912
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:5280
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 5912
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:5280
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:46:13
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:46:13
-Message: A carregar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1150
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 1804
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:6076
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 1804
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:6076
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 10-06-2013 02:47:55
-
-Message: There is no explicit mapping for the categories 'Information'. The log entry was: 
-Timestamp: 10-06-2013 02:47:55
-Message: A encerrar a aplicacao
-Category: Information
-Priority: 2
-EventId: 1000
-Severity: Information
-Title:BackEndApplication Information
-Machine: URIEL
-App Domain: BackEndAplication.vshost.exe
-ProcessId: 1804
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-Thread Name: 
-Win32 ThreadId:6076
-Extended Properties: 
-
-Category: 
-
-Priority: -1
-
-EventId: 6352
-
-Severity: Error
-
-Title:
-
-Machine: URIEL
-
-App Domain: BackEndAplication.vshost.exe
-
-ProcessId: 1804
-
-Process Name: C:\Users\joao\Documents\ifelse\code\pbackend\BackEndAplication\BackEndAplication\bin\Release\BackEndAplication.vshost.exe
-
-Thread Name: 
-
-Win32 ThreadId:6076
+Win32 ThreadId:5688
 
 Extended Properties: 
 ----------------------------------------

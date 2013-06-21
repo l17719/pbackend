@@ -1,8 +1,239 @@
 ----------------------------------------
-Timestamp: 28-05-2013 22:30:36
+Timestamp: 21-06-2013 18:26:08
 
-Message: WorkerSyncClientes: Ocorreu o seguinte erro ao devolver os dados para o terminal:ConnectorService 
-')' or ',' expected
+Message: A iniciar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1333
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163127523208935
+
+ProcessId: 5288
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:5336
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:10:48
+
+Message: A Encerrar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1000
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163127523208935
+
+ProcessId: 5288
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:5448
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:11:16
+
+Message: A iniciar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1333
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-2-130163190703552644
+
+ProcessId: 5288
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:5448
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:11:26
+
+Message: A Encerrar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1000
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-2-130163190703552644
+
+ProcessId: 5288
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:2088
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:11:45
+
+Message: A iniciar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1333
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163190971157950
+
+ProcessId: 5668
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:4264
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:17:51
+
+Message: A Encerrar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1000
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163190971157950
+
+ProcessId: 5668
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:6048
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 20:18:49
+
+Message: A iniciar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1333
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163195240892165
+
+ProcessId: 2268
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:5280
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 21:10:31
+
+Message: A iniciar o webService
+
+Category: Warning
+
+Priority: 1
+
+EventId: 1333
+
+Severity: Information
+
+Title:Connector Service Warning
+
+Machine: URIEL
+
+App Domain: c23df092-1-130163226287317919
+
+ProcessId: 6568
+
+Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
+
+Thread Name: 
+
+Win32 ThreadId:6460
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-06-2013 21:27:12
+
+Message: Erro ao registar encomendas nao existem parametros a registar
 
 Category: Error
 
@@ -16,82 +247,23 @@ Title:Connector Service Error
 
 Machine: URIEL
 
-App Domain: 5d61f3c9-6-130142533284793059
+App Domain: c23df092-1-130163226287317919
 
-ProcessId: 6056
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:6412
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 28-05-2013 22:30:59
-
-Message: A Encerrar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1000
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-6-130142533284793059
-
-ProcessId: 6056
+ProcessId: 6568
 
 Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
 
 Thread Name: 
 
-Win32 ThreadId:6208
+Win32 ThreadId:4564
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 28-05-2013 22:31:14
+Timestamp: 21-06-2013 21:27:12
 
-Message: A iniciar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1333
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-7-130142538672101196
-
-ProcessId: 6056
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:1804
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 28-05-2013 22:32:25
-
-Message: WorkerSyncClientes: Ocorreu o seguinte erro ao devolver os dados para o terminal:mscorlib 
-Value cannot be null.
-Parameter name: collection
+Message: Erro ao registar encomendas ocorreu o seguinte erro:ConnectorService 
+The creator of this fault did not specify a Reason.
 
 Category: Error
 
@@ -105,49 +277,20 @@ Title:Connector Service Error
 
 Machine: URIEL
 
-App Domain: 5d61f3c9-7-130142538672101196
+App Domain: c23df092-1-130163226287317919
 
-ProcessId: 6056
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:1804
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 28-05-2013 22:32:35
-
-Message: A Encerrar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1000
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-7-130142538672101196
-
-ProcessId: 6056
+ProcessId: 6568
 
 Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
 
 Thread Name: 
 
-Win32 ThreadId:4656
+Win32 ThreadId:4564
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 28-05-2013 22:32:51
+Timestamp: 21-06-2013 21:30:11
 
 Message: A iniciar o webService
 
@@ -163,110 +306,23 @@ Title:Connector Service Warning
 
 Machine: URIEL
 
-App Domain: 5d61f3c9-8-130142539653227313
+App Domain: c23df092-1-130163238087272838
 
-ProcessId: 6056
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:4656
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 28-05-2013 22:34:27
-
-Message: A iniciar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1333
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-1-130142540610252052
-
-ProcessId: 6920
+ProcessId: 5636
 
 Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
 
 Thread Name: 
 
-Win32 ThreadId:4508
+Win32 ThreadId:4140
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 28-05-2013 22:38:58
+Timestamp: 21-06-2013 21:33:25
 
-Message: A Encerrar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1000
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-1-130142540610252052
-
-ProcessId: 6920
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:4180
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 18:55:52
-
-Message: A iniciar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1333
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-1-130143273433061496
-
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:2696
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 18:56:56
-
-Message: WorkerDevolveDadosFiltros: Ocorreu o seguinte erro ao devolver os dados para o terminal:System.Data.Entity 
-The handle is invalid. (Exception from HRESULT: 0x80070006 (E_HANDLE))
+Message: Erro ao registar encomendas ocorreu o seguinte erro:Newtonsoft.Json 
+Required property 'bonome' not found in JSON. Path 'DADOSBO[0]', line 1, position 554.
 
 Category: Error
 
@@ -280,20 +336,20 @@ Title:Connector Service Error
 
 Machine: URIEL
 
-App Domain: 5d61f3c9-1-130143273433061496
+App Domain: c23df092-1-130163238087272838
 
-ProcessId: 4312
+ProcessId: 5636
 
 Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
 
 Thread Name: 
 
-Win32 ThreadId:5684
+Win32 ThreadId:4188
 
 Extended Properties: 
 ----------------------------------------
 ----------------------------------------
-Timestamp: 29-05-2013 18:57:29
+Timestamp: 21-06-2013 21:36:37
 
 Message: A Encerrar o webService
 
@@ -309,161 +365,15 @@ Title:Connector Service Warning
 
 Machine: URIEL
 
-App Domain: 5d61f3c9-1-130143273433061496
+App Domain: c23df092-1-130163238087272838
 
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:4832
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 18:57:37
-
-Message: A iniciar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1333
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-2-130143274543555013
-
-ProcessId: 4312
+ProcessId: 5636
 
 Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
 
 Thread Name: 
 
-Win32 ThreadId:4832
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 19:00:06
-
-Message: A Encerrar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1000
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-2-130143274543555013
-
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:2696
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 19:00:40
-
-Message: A iniciar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1333
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-3-130143276374729750
-
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:1796
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 19:08:02
-
-Message: WorkerDevolveDadosFiltros: Ocorreu o seguinte erro ao devolver os dados para o terminal:System.Data.Entity 
-Argument data type text is invalid for argument 1 of len function.
-
-Category: Error
-
-Priority: -1
-
-EventId: 1200
-
-Severity: Error
-
-Title:Connector Service Error
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-3-130143276374729750
-
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:1796
-
-Extended Properties: 
-----------------------------------------
-----------------------------------------
-Timestamp: 29-05-2013 19:08:07
-
-Message: A Encerrar o webService
-
-Category: Warning
-
-Priority: 1
-
-EventId: 1000
-
-Severity: Information
-
-Title:Connector Service Warning
-
-Machine: URIEL
-
-App Domain: 5d61f3c9-3-130143276374729750
-
-ProcessId: 4312
-
-Process Name: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer40.exe
-
-Thread Name: 
-
-Win32 ThreadId:4832
+Win32 ThreadId:4188
 
 Extended Properties: 
 ----------------------------------------

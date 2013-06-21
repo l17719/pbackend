@@ -191,7 +191,7 @@ namespace BackEndAplication.ViewModels
             get { return _selectedCbNumVendedor; }
             set
             {
-                if (_selectedCbNumVendedor == value) return;
+                //if (_selectedCbNumVendedor == value) return;
                 _selectedCbNumVendedor = value;
                 NotifyOfPropertyChange(() => SelectedCbNumVendedor);
                 TxtNumVendedor = _service.SetNomeVendedor(SelectedCbNumVendedor);
@@ -205,7 +205,7 @@ namespace BackEndAplication.ViewModels
             get { return _txtNumVendedor; }
             set
             {
-                if (_txtNumVendedor == value) return;
+                //if (_txtNumVendedor == value) return;
                 _txtNumVendedor = value;
                 NotifyOfPropertyChange(() => TxtNumVendedor);
             }
@@ -560,6 +560,24 @@ namespace BackEndAplication.ViewModels
                                                           "\n ch sem plicas para caracteres",
                                t => t.MessageTitle = "Informacao Backend Application");
         }
+
+
+        public void ShowInformationFiltros()
+        {
+            Coroutine.BeginExecute(MostraInformationFiltros().GetEnumerator());
+        }
+
+        public IEnumerable<IResult>MostraInformationFiltros()
+        {
+
+            yield return new ShowDialog<MessageBoxViewModel>()
+                .ConfigureWith(x => x.MessageboxMessage = "Antes de proceder a alguma alteração dos dados seleccione um dos itens relativos aos filtros,\n " +
+                                                          " o numero de vendedor e dossier interno",
+                               t => t.MessageTitle = "Informacao Backend Application");
+            //yield return new ShowDialog<MessageBoxViewModel>()
+            //   .ConfigureWith(x => x.MessageboxMessage = "Num vendedor: " + SelectedCbNumVendedor,
+            //                  t => t.MessageTitle = "Informacao Backend Application");
+        } 
         #region CarregaDados
         private bool LoadFiltros()
         {
@@ -602,7 +620,7 @@ namespace BackEndAplication.ViewModels
             IsDadosPhcChanged = false;
             IschkUsaPrecoU = false;
             IschkUsaPrecoD = false;
-            _ischkUsaPrecoT = false;
+            IschkUsaPrecoT = false;
             IschkUsaPrecoQ = false;
             IschkUsaPrecoC = false;
             TxtNumMaxDesconto = null;
@@ -613,6 +631,8 @@ namespace BackEndAplication.ViewModels
             SelectedCbFiltrosPhcCliente = null;
             CbFiltrosPhcStock = null;
             SelectedCbFiltrosPhcStock = null;
+            CbNumVendedor = null;
+            SelectedCbNumVendedor =0;
             TxtNomeDossier = null;
             NumTerminalId = null;
             IsrbReterTodas = false;
@@ -639,6 +659,11 @@ namespace BackEndAplication.ViewModels
         public void SaveDadosPhc()
         {
 
+            if ((string.IsNullOrEmpty(SelectedCbFiltrosPhcStock))||(string.IsNullOrEmpty(SelectedCbFiltrosPhcCliente))||(SelectedCbNumDossier==0)||(SelectedCbNumDossier==0))
+            {
+                ShowInformationFiltros();
+                return;
+            }
             TbOpcoesTerminal tmpOpterminal;
 
             if (IsUpdatingDataPhc)
@@ -662,7 +687,7 @@ namespace BackEndAplication.ViewModels
                     NumeroInicioClientes = DevolveDefaultInicioClientes(TxtNumeroInicialCliente),
                     NumeroFimEncomendas = DevolveDefaultFimEncomenda(TxtEncomendaFinal),
                     NumeroInicioEncomendas = DevolveDefaultInicioEncomenda(TxtEncomendaInicio),
-                    NumVendedor = DevolveValorDefaultNumVendedor(SelectedCbNumVendedor),
+                    NumVendedor = SelectedCbNumVendedor,
                     NomeVendedor = DevolveValorDefaultNomeVendedor(TxtNumVendedor),
                     NumMaxDescontos = Convert.ToInt32(TxtNumMaxDesconto),
                     NumeroEncomendasRetidas = DevolveEncomendas(TxtEncomendasRetidas),
@@ -697,7 +722,7 @@ namespace BackEndAplication.ViewModels
                     NumeroInicioClientes = DevolveDefaultInicioClientes(TxtNumeroInicialCliente),
                     NumeroFimEncomendas = DevolveDefaultFimEncomenda(TxtEncomendaFinal),
                     NumeroInicioEncomendas = DevolveDefaultInicioEncomenda(TxtEncomendaInicio),
-                    NumVendedor = DevolveValorDefaultNumVendedor(SelectedCbNumVendedor),
+                    NumVendedor = SelectedCbNumVendedor,
                     NomeVendedor = DevolveValorDefaultNomeVendedor(TxtNumVendedor),
                     NumMaxDescontos = Convert.ToInt32(TxtNumMaxDesconto),
                     NumeroEncomendasRetidas = DevolveEncomendas(TxtEncomendasRetidas),
@@ -846,7 +871,7 @@ namespace BackEndAplication.ViewModels
             TxtNumeroInicialCliente = PhcSelectedOp.NumeroInicioClientes.ToString(CultureInfo.InvariantCulture);
             TxtNumeroFinalCliente = PhcSelectedOp.NumeroFimClientes.ToString(CultureInfo.InvariantCulture);
             NumTerminalId = _service.DevolveNumTerminal(PhcSelectedOp.Id);
-
+            
             switch (PhcSelectedOp.TipoRetencaoEncomendas)
             {
                 case "T":
@@ -906,11 +931,14 @@ namespace BackEndAplication.ViewModels
             {
                 IschkUsaPrecoC = true;
             }
+           
             SelectedCbNumDossier = (int)PhcSelectedOp.PhcNumDossierInterno;
             SelectedCbNumVendedor = PhcSelectedOp.NumVendedor;
+            //ShowInformationFiltros();
+            TxtNumVendedor = PhcSelectedOp.NomeVendedor;
             SelectedCbFiltrosPhcCliente = InjectaFiltro("CL", PhcSelectedOp.PhcNomeFiltroClientes);
             SelectedCbFiltrosPhcStock = InjectaFiltro("ST", PhcSelectedOp.PhcNomeFiltroArtigos);
-
+           
         }
 
         private string InjectaFiltro(string valueTipoFiltro, string value)

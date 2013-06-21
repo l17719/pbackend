@@ -74,13 +74,19 @@ namespace ConnectorService
 
 
         #region PNS
-        
-        [OperationContract(AsyncPattern = true)]
-        [FaultContract(typeof(ConnectorServiceFault))]
-        [WebGet(BodyStyle = WebMessageBodyStyle.Wrapped,RequestFormat = WebMessageFormat.Json,ResponseFormat = WebMessageFormat.Json,
-            UriTemplate="/SyncPNS/?Vendedor={valueVendedor}")]
-        IAsyncResult BeginGetPns(string valueVendedor, AsyncCallback callback, object state);
-        DadosTerminal EndGetPns(IAsyncResult result);
+        /// <summary>
+        /// not implemented
+        /// </summary>
+        /// <param name="valueVendedor"></param>
+        /// <param name="callback"></param>
+        /// <param name="state"></param>
+        /// <returns></returns>
+        //[OperationContract(AsyncPattern = true)]
+        //[FaultContract(typeof(ConnectorServiceFault))]
+        //[WebGet(BodyStyle = WebMessageBodyStyle.Wrapped,RequestFormat = WebMessageFormat.Json,ResponseFormat = WebMessageFormat.Json,
+        //    UriTemplate="/SyncPNS/?Vendedor={valueVendedor}")]
+        //IAsyncResult BeginGetPns(string valueVendedor, AsyncCallback callback, object state);
+        //DadosTerminal EndGetPns(IAsyncResult result);
         #endregion
 
 

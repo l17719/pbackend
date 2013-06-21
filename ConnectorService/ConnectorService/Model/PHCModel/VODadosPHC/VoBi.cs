@@ -7,7 +7,7 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
     [Serializable]
     public class VoBi
     {
-        [DataMember(IsRequired = true, Name = "BIstamp", Order = 0)]
+        [DataMember(IsRequired = true, Name = "bistamp", Order = 0)]
         public string BIstamp { get; set; }
         [DataMember(IsRequired = true, Name = "ivaincl", Order = 1)]
         public decimal Ivaincl { get; set; }
@@ -37,28 +37,39 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
         public decimal Ndos { get; set; }
         [DataMember(IsRequired = true, Name = "obrano", Order = 14)]
         public int Obrano { get; set; }
-        [DataMember(IsRequired = true, Name = "Biref", Order = 15)]
-        public string Ref { get; set; }
-        [DataMember(IsRequired = true, Name = "design", Order = 16)]
+        //[DataMember(IsRequired = true, Name = "Biref", Order = 15)]
+        //public string Ref { get; set; }
+        [DataMember(IsRequired = true, Name = "design", Order = 15)]
         public string Design { get; set; }
-        [DataMember(IsRequired = true, Name = "edebito", Order = 17)]
+        [DataMember(IsRequired = true, Name = "edebito", Order = 16)]
         public decimal Edebito { get; set; }
-        [DataMember(IsRequired = true, Name = "desconto", Order = 18)]
+        [DataMember(IsRequired = true, Name = "desconto", Order = 17)]
         public decimal Desconto { get; set; }
-        [DataMember(IsRequired = true, Name = "desc2", Order = 19)]
+        [DataMember(IsRequired = true, Name = "desc2", Order = 18)]
         public decimal Desc2 { get; set; }
-        [DataMember(IsRequired = true, Name = "ettdeb", Order = 20)]
+        [DataMember(IsRequired = true, Name = "ettdeb", Order = 19)]
         public decimal Ettdeb { get; set; }
-        [DataMember(IsRequired = true, Name = "qtt", Order = 21)]
+        [DataMember(IsRequired = true, Name = "qtt", Order = 20)]
         public decimal Qtt { get; set; }
-        [DataMember(IsRequired = true, Name = "stipo", Order = 22)]
+        [DataMember(IsRequired = true, Name = "stipo", Order = 21)]
         public decimal Stipo { get; set; }
-        [DataMember(IsRequired = true, Name = "armazem", Order = 23)]
+        [DataMember(IsRequired = true, Name = "armazem", Order = 22)]
         public decimal Armazem { get; set; }
-        [DataMember(IsRequired = true, Name = "rdata", Order = 24)]
+        [DataMember(IsRequired = true, Name = "rdata", Order = 23)]
         public string Rdata { get; set; }
-        [DataMember(IsRequired = true, Name = "boobra", Order = 26)]
+        [DataMember(IsRequired = true, Name = "boobra", Order = 24)]
         public string Boobra { get; set; }
-        
+
+        [DataMember(IsRequired = true, Name = "desc3", Order = 25)]
+        public decimal Desc3 { get; set; }
+
+        [DataMember(IsRequired = true, Name = "desc4", Order = 26)]
+        public decimal Desc4 { get; set; }
+
+        [DataMember(IsRequired = true, Name = "desc5", Order = 27)]
+        public decimal Desc5 { get; set; }
+
+        [DataMember(IsRequired = true, Name = "desc6", Order = 28)]
+        public decimal Desc6 { get; set; }
     }
 }

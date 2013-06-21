@@ -328,9 +328,9 @@ namespace ConnectorService.Utilities
                 NumMaxDescontos = valueop.NumeroMaximoDescontos,
                 UsaPrecoUm = Convert.ToInt32(valueop.UsaPrecoUm),
                 UsaPrecoDois = Convert.ToInt32(valueop.UsaPrecoDois),
-                UsaPrecoTres = Convert.ToInt32(valueop.UsaPrecoDois),
-                UsaPrecoQuatro = Convert.ToInt32(valueop.UsaPrecoDois),
-                UsaPrecoCinco = Convert.ToInt32(valueop.UsaPrecoDois),
+                UsaPrecoTres = Convert.ToInt32(valueop.UsaPrecoTres),
+                UsaPrecoQuatro = Convert.ToInt32(valueop.UsaPrecoQuatro),
+                UsaPrecoCinco = Convert.ToInt32(valueop.UsaPrecoCinco),
                 PhcInitials = valueop.ValorIniciaisUs
             };
         }
@@ -368,11 +368,15 @@ namespace ConnectorService.Utilities
                 Ndos = value.Ndos,
                 //ver este campo
                 Obrano = value.Obrano,
-                Referencia = value.Ref,
+                
                 Design = value.Design,
                 Edebito = value.Edebito,
                 Desconto = value.Desconto,
                 Desc2 = value.Desc2,
+                Desc3 = value.Desc3,
+                Desc4 = value.Desc4,
+                Desc5 = value.Desc5,
+                Desc6 = value.Desc6,
                 Ettdeb = value.Ettdeb,
                 Qtt = value.Qtt,
                 Stipo = value.Stipo,
@@ -383,6 +387,8 @@ namespace ConnectorService.Utilities
                 Rdata = Convert.ToDateTime(value.Rdata),
                 //
                 //campos que nao vem preenchidos da vo do pda comparar com o trace
+
+                Referencia = " ",
                 Qtt2 = 0,
                 Pu = 0,
                 Debito = 0,
@@ -496,10 +502,7 @@ namespace ConnectorService.Utilities
                 Classif = 0,
                 Classifc = " ",
                 Posic = " ",
-                Desc3 = 0,
-                Desc4 = 0,
-                Desc5 = 0,
-                Desc6 = 0,
+               
                 Series = " ",
                 Series2 = " ",
                 Ccusto = " ",
@@ -731,6 +734,7 @@ namespace ConnectorService.Utilities
                     Dataobra = Convert.ToDateTime(value.Dataobra),
                     Obranome = value.Obranome,
                     Nome = value.BoNome,
+                    Nome2 = value.Nome2,
                     No = value.No,
                     Estab = value.Estab,
                     Obs = value.Obs,
@@ -847,7 +851,6 @@ namespace ConnectorService.Utilities
                     Bo2Tvall = 0,
                     Edi = false,
                     Memissao = " ",
-                    Nome2 = " ",
                     Pastamp = " ",
                     Snstamp = " ",
                     Mastamp = " ",
@@ -1249,8 +1252,8 @@ namespace ConnectorService.Utilities
                 Edebf = value.Edebf,
                 Ecred = value.Ecred,
                 Ecredf = value.Ecredf,
-                Datalc = value.Datalc.ToLongDateString(),
-                Dataven = value.Dataven.ToLongDateString(),
+                Datalc = value.Datalc.ToString("dd-MM-yyyy HH:mm tt"),
+                Dataven = value.Dataven.ToString("dd-MM-yyyy HH:mm tt"),
                 Evalre = value.Valre,
                 Evtmp = value.Evtmp,
                 Evirs = value.Evirs,

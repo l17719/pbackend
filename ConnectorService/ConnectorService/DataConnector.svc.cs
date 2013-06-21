@@ -838,83 +838,92 @@ namespace ConnectorService
         /// <param name="callback"></param>
         /// <param name="state"></param>
         /// <returns></returns>
-        public IAsyncResult BeginGetPns(string valueVendedor, AsyncCallback callback, object state)
-        {
-            _valueVendContas = valueVendedor;
-            var taskPns = Task<DadosTerminal>.Factory.StartNew(WorkerDevolvePns, state);
-            return taskPns.ContinueWith(res => callback(taskPns));
-        }
+        //public IAsyncResult BeginGetPns(string valueVendedor, AsyncCallback callback, object state)
+        //{
+        //    _valueVendContas = valueVendedor;
+        //    var taskPns = Task<DadosTerminal>.Factory.StartNew(WorkerDevolvePns, state);
+        //    return taskPns.ContinueWith(res => callback(taskPns));
+        //}
 
-        private DadosTerminal WorkerDevolvePns(object state)
-        {
-            DadosTerminal resultado;
-            try
-            {
-                if (string.IsNullOrEmpty(_valueVendContas))
-                {
-                    if (string.IsNullOrEmpty(_valueVendContas))
-                    {
-                        throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
-                        {
-                            DataDetails = "Nao foram fornecidos dados para obter os parametros PHC PNS",
-                            DataMessage = "Erro ao obter os parametros PHC PNS"
-                        });
+        //private DadosTerminal WorkerDevolvePns(object state)
+        //{
+        //    DadosTerminal resultado;
+        //    try
+        //    {
+              
+        //            if (string.IsNullOrEmpty(_valueVendContas))
+        //            {
+        //                throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
+        //                {
+        //                    DataDetails = "Nao foram fornecidos dados para obter os parametros PHC PNS",
+        //                    DataMessage = "Erro ao obter os parametros PHC PNS"
+        //                });
 
-                    }
-                }
+                    
+        //        }
 
-                using (var tmp = new PhcDbContext(_utility.DevolveConnectionStringPhc().ProviderConnectionString))
-                {
+        //        using (var tmp = new PhcDbContext(_utility.DevolveConnectionStringPhc().ProviderConnectionString))
+        //        {
 
-                    try
-                    {
-                        tmp.Configuration.AutoDetectChangesEnabled = false;
-                        var tpns = tmp.Database.SqlQuery<PnsFiltradas>("select distinct pn.ref as PNReferencia,cl.no,pn.design " +
-                                                                      "from pn inner join cl on pn.no=cl.no inner join st on pn.ref=st.ref" +
-                                                                      " where (cl.vendedor=@vendedor and cl.inactivo<>1 and st.bloqueado<>1) order by cl.no ",
-                                                                      new SqlParameter("@vendedor", _valueVendContas)).ToList();
-
+        //            try
+        //            {
+        //                tmp.Configuration.AutoDetectChangesEnabled = false;
+        //                //var tpns = tmp.Database.SqlQuery<PnsFiltradas>("select distinct pn.ref as PNReferencia,cl.no,pn.design " +
+        //                //                                              "from pn inner join cl on pn.no=cl.no inner join st on pn.ref=st.ref" +
+        //                //                                              " where (cl.vendedor=@vendedor and cl.inactivo<>1 and st.bloqueado<>1) order by cl.no ",
+        //                //                                              new SqlParameter("@vendedor", _valueVendContas)).ToList();
 
 
-                        resultado = _utility.SerializePns(tpns);
 
-                    }
-                    finally
-                    {
-                        tmp.Configuration.AutoDetectChangesEnabled = true;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-
-                if (e.InnerException == null)
-                {
-                    _logManager.WriteError(1200,
-                                           "Erro ao obter as contas correntes do terminal,ocorreu o seguinte erro:" +
-                                           e.Source + " \n" + e.Message);
-                }
-                else
-                {
-                    _logManager.WriteError(1200,
-                                           "Erro ao obter as contas correntes do terminal,ocorreu o seguinte erro:" +
-                                           e.Source + " \n" + e.InnerException);
-                }
-
-                throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
-                {
-                    DataDetails = "Nao foi possivel obter a chave de acesso do terminal por favor volte a tentar mais tarde",
-                    DataMessage = "Ocorreu um erro ao obter a chave para o terminal"
-                });
-            }
-            return resultado;
-        }
+        //                var tpns = tmp.Database.SqlQuery<PnsFiltradas>("select distinct pn.ref as PNReferencia,cl.no,pn.design " +
+        //                                                             "from pn inner join cl on pn.no=cl.no inner join st on pn.ref=st.ref" +
+        //                                                             " where (cl.vendedor=@vendedor and cl.inactivo<>1 and st.bloqueado<>1) order by cl.no ",
+        //                                                             new SqlParameter("@vendedor", _valueVendContas))
+        //                                                             .OrderByDescending(t=>t.no).Take(25).ToList();
 
 
-        public DadosTerminal EndGetPns(IAsyncResult result)
-        {
-            return ((Task<DadosTerminal>)result).Result;
-        }
+                        
+
+        //                resultado = _utility.SerializePns(tpns);
+
+        //            }
+        //            finally
+        //            {
+        //                tmp.Configuration.AutoDetectChangesEnabled = true;
+        //            }
+        //        }
+        //    }
+        //    catch (Exception e)
+        //    {
+
+        //        if (e.InnerException == null)
+        //        {
+        //            _logManager.WriteError(1200,
+        //                                   "Erro ao obter as pns do terminal,ocorreu o seguinte erro:" +
+        //                                   e.Source + " \n" + e.Message);
+        //        }
+        //        else
+        //        {
+        //            _logManager.WriteError(1200,
+        //                                   "Erro ao obter pns do terminal,ocorreu o seguinte erro:" +
+        //                                   e.Source + " \n" + e.InnerException);
+        //        }
+
+        //        throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
+        //        {
+        //            DataDetails = "Nao foi possivel obter a chave de acesso do terminal por favor volte a tentar mais tarde",
+        //            DataMessage = "Ocorreu um erro ao obter a chave para o terminal"
+        //        });
+        //    }
+        //    return resultado;
+        //}
+
+
+        //public DadosTerminal EndGetPns(IAsyncResult result)
+        //{
+            
+        //    return ((Task<DadosTerminal>)result).Result;
+        //}
         #endregion
         #endregion
 
@@ -988,6 +997,7 @@ namespace ConnectorService
 
 
         #endregion
+
         #region Metodosnaoimplementadosainda
 
 
@@ -1015,15 +1025,6 @@ namespace ConnectorService
     //public IAsyncResult BeginSyncDadosTerminal(string valueClientes, string valueStock,string valueCC, AsyncCallback callback, object state)
 
 
-    /// <summary>
-    /// metodo para devolver os dados para o terminal (retirar o numero vendedor) 
-    /// somente 2 clausulas ou existe filtro ou nao existe filtro tem que vir os dois
-    /// </summary>
-    /// <param name="valueClientes"></param>
-    /// <param name="valueStock"></param>
-    /// <param name="callback"></param>
-    /// <param name="state"></param>
-    /// <returns></returns>
     //public IAsyncResult BeginSyncDadosTerminal(string valueClientes, string valueStock, AsyncCallback callback, object state)
     //{
 

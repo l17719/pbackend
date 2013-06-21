@@ -7,7 +7,7 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
     [Serializable]
     public class Vobo
     {
-        [DataMember(IsRequired = true, Name = "BOstamp", Order = 0)]
+        [DataMember(IsRequired = true, Name = "bostamp", Order = 0)]
         public string BOstamp { get; set; }
         [DataMember(IsRequired = true, Name = "vendedor", Order = 1)]
         public decimal Vendedor { get; set; }
@@ -23,7 +23,7 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
         public string Dataobra { get; set; }
         [DataMember(IsRequired = true, Name = "obranome", Order = 7)]
         public string Obranome { get; set; }
-        [DataMember(IsRequired = true, Name = "bonome", Order = 8)]
+        [DataMember(IsRequired = true, Name = "nome", Order = 8)]
         public string BoNome { get; set; }
         [DataMember(IsRequired = true, Name = "no", Order = 9)]
         public int No { get; set; }
@@ -70,6 +70,8 @@ namespace ConnectorService.Model.PHCModel.VODadosPHC
         [DataMember(IsRequired = true, Name = "ebo62_iva", Order = 30)]
         public decimal Ebo62Iva { get; set; }
 
+        [DataMember(IsRequired = true, Name = "nome2", Order = 31)]
+        public string Nome2 { get; set; }
        
     }
 }
