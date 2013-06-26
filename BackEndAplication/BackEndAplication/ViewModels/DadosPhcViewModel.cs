@@ -347,13 +347,14 @@ namespace BackEndAplication.ViewModels
             get { return _isrbReterTodas; }
             set
             {
-
+                if (_isrbReterTodas == value) return; 
                 _isrbReterTodas = value;
 
                 NotifyOfPropertyChange(() => IsrbReterTodas);
 
                 IsTxtEncomendasRetidas = false;
-
+                IsrbEliminaSinc = false;
+                IsrbReterUltimas = false;
 
             }
         }
@@ -363,10 +364,13 @@ namespace BackEndAplication.ViewModels
             get { return _isrbReterUltimas; }
             set
             {
+                if(_isrbReterUltimas==value)return;
                 _isrbReterUltimas = value;
 
                 NotifyOfPropertyChange(() => IsrbReterUltimas);
                 IsTxtEncomendasRetidas = true;
+                IsrbReterTodas = false;
+                IsrbEliminaSinc = false;
             }
         }
 
@@ -375,11 +379,13 @@ namespace BackEndAplication.ViewModels
             get { return _isrbEliminaSinc; }
             set
             {
-
+                if (_isrbEliminaSinc == value) return;
                 _isrbEliminaSinc = value;
 
                 NotifyOfPropertyChange(() => IsrbEliminaSinc);
                 IsTxtEncomendasRetidas = false;
+                IsrbReterTodas = false;
+                IsrbReterUltimas = false;
             }
         }
 
@@ -808,6 +814,9 @@ namespace BackEndAplication.ViewModels
                 return IsrbReterUltimas ? "U" : "N";
             }
             return "T";
+
+
+
         }
 
         private static int DevolveEncomendas(string value)
@@ -882,6 +891,8 @@ namespace BackEndAplication.ViewModels
                     IsrbReterUltimas = true;
                     TxtEncomendasRetidas = PhcSelectedOp.NumeroEncomendasRetidas.ToString(CultureInfo.InvariantCulture);
                     IsTxtEncomendasRetidas = true;
+                    IsrbReterTodas = false;
+                    IsrbEliminaSinc = false;
                     break;
                 case "N":
                     IsrbReterTodas = false;

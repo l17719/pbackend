@@ -139,19 +139,28 @@
         <GroupBox Header="Retencao Encomendas" x:Name="grpDadosReter" Height="112" Margin="14,205,367,283">
             <Canvas x:Name="CnvParamEnc" Canvas.Top="3" Canvas.Left="-47" Height="84" VerticalAlignment="Top"
               HorizontalAlignment="Left" Width="212.48">
-                <RadioButton x:Name="rbReterTodas"
+                <CheckBox x:Name="rbReterTodas" IsChecked="{Binding IsrbReterTodas,Mode=TwoWay,FallbackValue=False}"
+                          Content="Reter todas" Canvas.Top="9.281" />
+                <CheckBox x:Name="rbReterUltimas" Content="Reter as ultimas"
+                     IsChecked="{Binding IsrbReterUltimas,Mode=TwoWay,FallbackValue=False}"
+                            Canvas.Top="34" />
+                <CheckBox x:Name="rbEliminaSinc"
+                     IsChecked="{Binding IsrbEliminaSinc,Mode=TwoWay,FallbackValue=False}" 
+                             
+                     Content="Eliminar após Sincronizar" Canvas.Top="58" Canvas.Left="1" />
+                <!--<RadioButton x:Name="rbReterTodas"
                               IsChecked="{Binding IsrbReterTodas,Mode=TwoWay,FallbackValue=False}"
-                     Content="Reter todas" GroupName="RbTodas" Canvas.Top="9.281" />
+                     Content="Reter todas" GroupName="RbRetencao" Canvas.Top="9.281" />
                 <RadioButton x:Name="rbReterUltimas" Content="Reter as ultimas"
                      IsChecked="{Binding IsrbReterUltimas,Mode=TwoWay,FallbackValue=False}"
-                             GroupName="RbUltimas" Canvas.Top="34" />
+                             GroupName="RbRetencao" Canvas.Top="34" />-->
                 <TextBox x:Name="TxtEncomendasRetidas"
                  IsEnabled="{Binding IsTxtEncomendasRetidas,Mode=TwoWay,FallbackValue=False}" Width="80" Canvas.Top="34"
                  Canvas.Left="117" />
-                <RadioButton x:Name="rbEliminaSinc"
+                <!--<RadioButton x:Name="rbEliminaSinc"
                      IsChecked="{Binding IsrbEliminaSinc,Mode=TwoWay,FallbackValue=False}" 
-                             GroupName="RbDel"
-                     Content="Eliminar após Sincronizar" Canvas.Top="58" Canvas.Left="1" />
+                             GroupName="RbRetencao"
+                     Content="Eliminar após Sincronizar" Canvas.Top="58" Canvas.Left="1" />-->
             </Canvas>
         </GroupBox>
     </Grid>
