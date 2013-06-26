@@ -368,7 +368,7 @@ namespace ConnectorService.Utilities
                 Ndos = value.Ndos,
                 //ver este campo
                 Obrano = value.Obrano,
-                
+                Referencia = value.Ref,
                 Design = value.Design,
                 Edebito = value.Edebito,
                 Desconto = value.Desconto,
@@ -388,7 +388,7 @@ namespace ConnectorService.Utilities
                 //
                 //campos que nao vem preenchidos da vo do pda comparar com o trace
 
-                Referencia = " ",
+                
                 Qtt2 = 0,
                 Pu = 0,
                 Debito = 0,
@@ -408,7 +408,7 @@ namespace ConnectorService.Utilities
                 Lobs = " ",
                 Ldossier = 0,
                 //teste para obter o bo obranome
-                Obranome = value.Boobra,
+                
                 //
                 Fechada = false,
                 Datafinal = DateTime.UtcNow,
@@ -571,8 +571,8 @@ namespace ConnectorService.Utilities
                 Evaldesc = 0,
                 Ecoval2 = 0,
                 Ecustoind = 0,
-                Tecoval2 = 0
-
+                Tecoval2 = 0,
+                Obranome = ""
                 //
 
             };
@@ -609,9 +609,9 @@ namespace ConnectorService.Utilities
                 Cladrszona = " ",
                 Codpost = " ",
                 Contacto = " ",
-                Custototaldif = 0,
+                //Custototaldif = 0,
                 Zona2 = " ",
-                Ecustototaldif = 0,
+                //Ecustototaldif = 0,
                 EftaxamtA = 0,
                 EftaxamtB = 0,
                 Email = " ",
@@ -635,18 +635,18 @@ namespace ConnectorService.Utilities
                 Usrhora = " ",
                 Usrinis = " ",
                 Zona1 = " ",
-                Custoinddif = 0,
-                Custoinddifperc = 0,
-                Custoindorcamento = 0,
-                Custototaldifperc = 0,
-                Custototalorcamento = 0,
+                //Custoinddif = 0,
+                //Custoinddifperc = 0,
+                //Custoindorcamento = 0,
+                //Custototaldifperc = 0,
+                //Custototalorcamento = 0,
                 Descfx = " ",
                 Desemb = false,
-                Ecustoinddif = 0,
-                Ecustoindorcamento = 0,
-                Ecustototalorcamento = 0,
-                Emargemdif = 0,
-                Emargemorcamento = 0,
+                //Ecustoinddif = 0,
+                //Ecustoindorcamento = 0,
+                //Ecustototalorcamento = 0,
+                //Emargemdif = 0,
+                //Emargemorcamento = 0,
                 Eqttaprval = 0,
                 Eqttfaltaval = 0,
                 Eqttmedidaval = 0,
@@ -659,8 +659,8 @@ namespace ConnectorService.Utilities
                 Foadoc =" ",
                 Fodocnome = " ",
                 Lobsauto = " ",
-                Margemdif = 0,
-                Margemorcamento = 0,
+                //Margemdif = 0,
+                //Margemorcamento = 0,
                 Noaprov = 0,
                 Noaprov2 = 0,
                 Ofcstamp = "  ",
@@ -677,8 +677,8 @@ namespace ConnectorService.Utilities
                 Qttaprval = 0,
                 Qttatrib = 0,
                 Qttcompra = 0,
-                Qttdif = 0,
-                Qttdifperc = 0,
+                //Qttdif = 0,
+                //Qttdifperc = 0,
                 Qttenc = 0,
                 Qttfalta = 0,
                 Qttfaltaval = 0,
@@ -689,7 +689,7 @@ namespace ConnectorService.Utilities
                 Qttnew2 = 0,
                 Qttnoapr = 0,
                 Qttnoaprval = 0,
-                Qttorcamento = 0,
+               // Qttorcamento = 0,
                 Qtttbrmais = 0,
                 Qtttbrmenos = 0,
                 Semserprv = false,
@@ -731,7 +731,8 @@ namespace ConnectorService.Utilities
                     Nmdos = value.Nmdos,
                     Ndos = value.Ndos,
                     Obrano = value.Obrano,
-                    Dataobra = Convert.ToDateTime(value.Dataobra),
+                    Dataobra = DevolveDataObra(value.Dataobra),
+                    //Dataobra = Convert.ToDateTime(value.Dataobra),
                     Obranome = value.Obranome,
                     Nome = value.BoNome,
                     Nome2 = value.Nome2,
@@ -756,10 +757,9 @@ namespace ConnectorService.Utilities
                     Ebo52Iva = value.Ebo52Iva,
                     Ebo62Bins = value.Ebo62Bins,
                     Ebo62Iva = value.Ebo62Iva,
+                    Etotaldeb = value.Etotaldeb,
                     //campos que nao estao presentes na bd sqlite
-                    Totaldeb = 0,
-                    Etotaldeb = 0,
-                    Tipo = " ",
+                    Tipo = "4",
                     Datafinal = DateTime.UtcNow,
                     Smoe1 = 0,
                     Smoe2 = 0,
@@ -786,7 +786,7 @@ namespace ConnectorService.Utilities
                     Stot2 = 0,
                     Stot3 = 0,
                     Stot4 = 0,
-                    Boano = 0,
+                    Boano = DevolveBoAno(value.Dataobra),
                     Dataopen = DateTime.UtcNow,
                     Datafecho = DateTime.UtcNow,
                     Fechada = false,
@@ -941,6 +941,22 @@ namespace ConnectorService.Utilities
          
         }
 
+        private decimal DevolveBoAno(string value)
+        {
+            var tmpData = DateTime.ParseExact(value,"yyyy-MM-dd H:mm:ss", CultureInfo.InvariantCulture);
+
+
+            return tmpData.Year;
+        }
+
+        private DateTime DevolveDataObra(string value)
+        {
+            //var resultado = DateTime.UtcNow;
+            
+            return DateTime.ParseExact(value, "yyyy-MM-dd H:mm:ss",CultureInfo.InvariantCulture);
+        }
+
+         
         #endregion
         #endregion
 

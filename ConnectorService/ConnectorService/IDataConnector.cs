@@ -137,12 +137,12 @@ namespace ConnectorService
         /// <returns></returns>
         [OperationContract(AsyncPattern = true)]
         [FaultContract(typeof(ConnectorServiceFault))]
+        //[WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json,
+        //    UriTemplate = "/SyncEncomenda/?EncValue={valueEncomendas}",
+        //    BodyStyle = WebMessageBodyStyle.Wrapped)]
         [WebGet(UriTemplate = "/SyncEncomenda/?EncValue={valueEncomendas}",
-            ResponseFormat = WebMessageFormat.Json,RequestFormat = WebMessageFormat.Json,
+            ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json,
             BodyStyle = WebMessageBodyStyle.Wrapped)]
-        //[WebInvoke(Method = "GET", BodyStyle = WebMessageBodyStyle.Wrapped,
-        //    ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json,
-        //    UriTemplate = "/SyncEncomenda/?EncValue={valueEncomendas}")]
         IAsyncResult BeginSyncEncomendas(string valueEncomendas, AsyncCallback callback, object state);
 
         DadosEncomendas EndSyncEncomendas(IAsyncResult result);

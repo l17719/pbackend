@@ -253,23 +253,23 @@ namespace ConnectorService.Model.PHCModel.Mapping
             Property(t => t.Mcomercial).HasColumnName("mcomercial");
             Property(t => t.Usamcomercial).HasColumnName("usamcomercial");
             Property(t => t.Qttatrib).HasColumnName("qttatrib");
-            Property(t => t.Qttorcamento).HasColumnName("qttorcamento");
-            Property(t => t.Ecustoindorcamento).HasColumnName("ecustoindorcamento");
-            Property(t => t.Custoindorcamento).HasColumnName("custoindorcamento");
-            Property(t => t.Ecustototalorcamento).HasColumnName("ecustototalorcamento");
-            Property(t => t.Custototalorcamento).HasColumnName("custototalorcamento");
-            Property(t => t.Emargemorcamento).HasColumnName("emargemorcamento");
-            Property(t => t.Margemorcamento).HasColumnName("margemorcamento");
-            Property(t => t.Qttdif).HasColumnName("qttdif");
-            Property(t => t.Ecustoinddif).HasColumnName("ecustoinddif");
-            Property(t => t.Custoinddif).HasColumnName("custoinddif");
-            Property(t => t.Ecustototaldif).HasColumnName("ecustototaldif");
-            Property(t => t.Custototaldif).HasColumnName("custototaldif");
-            Property(t => t.Emargemdif).HasColumnName("emargemdif");
-            Property(t => t.Margemdif).HasColumnName("margemdif");
-            Property(t => t.Qttdifperc).HasColumnName("qttdifperc");
-            Property(t => t.Custoinddifperc).HasColumnName("custoinddifperc");
-            Property(t => t.Custototaldifperc).HasColumnName("custototaldifperc");
+            //Property(t => t.Qttorcamento).HasColumnName("qttorcamento");
+            //Property(t => t.Ecustoindorcamento).HasColumnName("ecustoindorcamento");
+            //Property(t => t.Custoindorcamento).HasColumnName("custoindorcamento");
+            //Property(t => t.Ecustototalorcamento).HasColumnName("ecustototalorcamento");
+            //Property(t => t.Custototalorcamento).HasColumnName("custototalorcamento");
+            //Property(t => t.Emargemorcamento).HasColumnName("emargemorcamento");
+            //Property(t => t.Margemorcamento).HasColumnName("margemorcamento");
+            //Property(t => t.Qttdif).HasColumnName("qttdif");
+            //Property(t => t.Ecustoinddif).HasColumnName("ecustoinddif");
+            //Property(t => t.Custoinddif).HasColumnName("custoinddif");
+            //Property(t => t.Ecustototaldif).HasColumnName("ecustototaldif");
+            //Property(t => t.Custototaldif).HasColumnName("custototaldif");
+            //Property(t => t.Emargemdif).HasColumnName("emargemdif");
+            //Property(t => t.Margemdif).HasColumnName("margemdif");
+            //Property(t => t.Qttdifperc).HasColumnName("qttdifperc");
+            //Property(t => t.Custoinddifperc).HasColumnName("custoinddifperc");
+            //Property(t => t.Custototaldifperc).HasColumnName("custototaldifperc");
         }
     }
 }

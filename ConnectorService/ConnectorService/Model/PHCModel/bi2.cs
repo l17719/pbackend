@@ -94,23 +94,23 @@ namespace ConnectorService.Model.PHCModel
         public decimal Mcomercial { get; set; }
         public bool Usamcomercial { get; set; }
         public decimal Qttatrib { get; set; }
-        public decimal Qttorcamento { get; set; }
-        public decimal Ecustoindorcamento { get; set; }
-        public decimal Custoindorcamento { get; set; }
-        public decimal Ecustototalorcamento { get; set; }
-        public decimal Custototalorcamento { get; set; }
-        public decimal Emargemorcamento { get; set; }
-        public decimal Margemorcamento { get; set; }
-        public decimal Qttdif { get; set; }
-        public decimal Ecustoinddif { get; set; }
-        public decimal Custoinddif { get; set; }
-        public decimal Ecustototaldif { get; set; }
-        public decimal Custototaldif { get; set; }
-        public decimal Emargemdif { get; set; }
-        public decimal Margemdif { get; set; }
-        public decimal Qttdifperc { get; set; }
-        public decimal Custoinddifperc { get; set; }
-        public decimal Custototaldifperc { get; set; }
+        //public decimal Qttorcamento { get; set; }
+        //public decimal Ecustoindorcamento { get; set; }
+        //public decimal Custoindorcamento { get; set; }
+        //public decimal Ecustototalorcamento { get; set; }
+        //public decimal Custototalorcamento { get; set; }
+        //public decimal Emargemorcamento { get; set; }
+        //public decimal Margemorcamento { get; set; }
+        //public decimal Qttdif { get; set; }
+        //public decimal Ecustoinddif { get; set; }
+        //public decimal Custoinddif { get; set; }
+        //public decimal Ecustototaldif { get; set; }
+        //public decimal Custototaldif { get; set; }
+        //public decimal Emargemdif { get; set; }
+        //public decimal Margemdif { get; set; }
+        //public decimal Qttdifperc { get; set; }
+        //public decimal Custoinddifperc { get; set; }
+        //public decimal Custototaldifperc { get; set; }
 
         //public virtual ICollection<Bi2> ListaBiD { get; set; }
     }
