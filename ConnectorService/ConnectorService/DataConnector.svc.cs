@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
@@ -60,11 +62,12 @@ namespace ConnectorService
 
         private DadosEncomendas WorkerRegistaEncomendas(object state)
         {
-            var listBiResult = new List<VoBi>();
-            var listBoResult = new List<Vobo>();
+            
             var resultado = new DadosEncomendas();
             try
             {
+                var listBiResult = new List<VoBi>();
+                var listBoResult = new List<Vobo>();
                 if (string.IsNullOrEmpty(_valueEncomendas))
                 {
                     _logManager.WriteError(1200, "Erro ao registar encomendas nao existem parametros a registar");
@@ -78,16 +81,22 @@ namespace ConnectorService
 
                 using (var tmp = new PhcDbContext(_utility.DevolveConnectionStringPhc().ProviderConnectionString))
                 {
+                    //old code
                     var tmpBi = _utility.DeserializeBi(_valueEncomendas);
                     var tmpBo = _utility.DeserializeBo(_valueEncomendas);
+                    //
+                   // var tmpBi = _utility.DeserializeRemoteBi(_valueEncomendas);
+                   // var tmpBo = _utility.DeserializeRemotebBo(_valueEncomendas);
 
-
+                    _valueEncomendas = "";
                     foreach (var item in tmpBo)
                     {
                         var tmpitembo = _utility.ConvertVoBoTbBo(item);
-
-                        tmp.DadosCabecalhosEncomendas.Add(tmpitembo);
-                        tmp.DadosCabecalhosEncomendasExt.Add(_utility.GenerateBo2(item.BOstamp));
+                        //var tmpItembo = _utility.ConvertRemoteBoToTb(item);
+                         tmp.DadosCabecalhosEncomendas.Add(tmpitembo);
+                        //tmp.DadosCabecalhosEncomendas.Add(tmpItembo);
+                        //tmp.DadosCabecalhosEncomendasExt.Add(_utility.GenerateBo2(item.BOstamp));
+                        tmp.DadosCabecalhosEncomendasExt.Add(_utility.GenerateBo2(tmpitembo.Bostamp));
                         listBoResult.Add(item);
 
                     }
@@ -95,11 +104,12 @@ namespace ConnectorService
 
                     foreach (var item in tmpBi)
                     {
-                        var tmpitem = _utility.ConvertVoTb(item);
+                       var tmpitem = _utility.ConvertVoTb(item);
+                        //var tmpitem = _utility.ConvertRemoveBiTb(item);
                         tmp.DadosLinhasEncomendas.Add(tmpitem);
                         //tmp.LinhasEncomendas.Add(_utility.ConvertVoTb(item));
                         //tmp.DadosLinhasEncomendas.Add(_utility.ConvertVoTb(item));
-                        tmp.DadosLinhasEncomendasExt.Add(_utility.GenerateBi2(item.BIstamp));
+                        tmp.DadosLinhasEncomendasExt.Add(_utility.GenerateBi2(tmpitem.Bistamp));
                         listBiResult.Add(item);
                     }
 
@@ -110,17 +120,19 @@ namespace ConnectorService
 
                 }
             }
-            //catch (DbEntityValidationException ex)
-            //{
-            //    foreach (var validationE in ex.EntityValidationErrors)
-            //    {
-            //        foreach (var validationError in validationE.ValidationErrors)
-            //        {
-            //            Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
-
-            //        }
-            //    }
-            //}
+            catch (DbEntityValidationException ex)
+            {
+                foreach (var validationError in ex.EntityValidationErrors.SelectMany(validationE => validationE.ValidationErrors))
+                {
+                    //Trace.TraceInformation("Property: {0} Error: {1}", validationError.PropertyName, validationError.ErrorMessage);
+                    _logManager.WriteError(1200, "Erro ao registar as encomendas na base de dados ocorreu o seguinte erro:" + validationError.PropertyName + " \n" + validationError.ErrorMessage);
+                    throw new FaultException<ConnectorServiceFault>(new ConnectorServiceFault
+                    {
+                        DataDetails = "Nao foi possivel introduzir as encomendas, por favor contacte o administrador da plataforma",
+                        DataMessage = "Erro ao introduzir as encomendas os campos nao foram preenchidos correctamente"
+                    });
+                }
+            }
             catch (Exception e)
             {
                 if (e.InnerException == null)
@@ -831,10 +843,10 @@ namespace ConnectorService
 
 
         #region PNS
+
         /// <summary>
         /// DEvolve as pns
         /// </summary>
-        /// <param name="valueVendedor"></param>
         /// <param name="callback"></param>
         /// <param name="state"></param>
         /// <returns></returns>

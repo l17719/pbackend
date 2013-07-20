@@ -271,8 +271,16 @@ namespace ConnectorService.Utilities
 
 
             var tmp = JsonConvert.DeserializeObject<RootElement>(value);
+            
             return tmp.VoBiList;
         }
+
+        public IList<RemoteBi>DeserializeRemoteBi(string value)
+        {
+            var tmp = JsonConvert.DeserializeObject<RootElement>(value);
+            return new List<RemoteBi>();
+            //return tmp.VoBiList;
+        } 
         #endregion
 
         #region DeSerializeBO
@@ -286,6 +294,13 @@ namespace ConnectorService.Utilities
             var tmp = JsonConvert.DeserializeObject<RootElement>(value);
             return tmp.VoBoList;
         }
+
+        public IList<RemoteBo> DeserializeRemotebBo(string value)
+        {
+            var tmp = JsonConvert.DeserializeObject<RootElement>(value);
+            return new List<RemoteBo>();
+           // return tmp.VoBoList;
+        } 
         #endregion
         #endregion
 
@@ -583,10 +598,255 @@ namespace ConnectorService.Utilities
 
         #endregion
 
+
+        #region ConvertRemoteVOTOTB
+
+        /// <summary>
+        /// metodo para converter as vo's streamed
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public Bi ConvertRemoveBiTb(RemoteBi value)
+        {
+            return new Bi
+                       {
+                           Bistamp = value.BIstamp,
+                           Ivaincl = ConvertDecimaltoBool(value.Ivaincl),
+                           //Vendnm = value.Vendnm,
+                           //Vendedor = value.Vendedor,
+                           Iva = value.Iva,
+                           Lordem = value.Lordem,
+                           Tabiva = value.Tabiva,
+                           Txiva = value.Txiva,
+                           //Familia = value.Familia,
+                           Promo = Convert.ToBoolean(value.Promo),
+                           Epromo = Convert.ToBoolean(value.Epromo),
+                           Bostamp = value.Bostamp,
+                           //Nmdos = value.Nmdos,
+                           //Ndos = value.Ndos,
+                           //ver este campo
+                           Obrano = value.Obrano,
+                           Referencia = value.Ref,
+                           //Design = value.Design,
+                           Edebito = value.Edebito,
+                           Desconto = value.Desconto,
+                           Desc2 = value.Desc2,
+                           Desc3 = value.Desc3,
+                           Desc4 = value.Desc4,
+                           Desc5 = value.Desc5,
+                           Desc6 = value.Desc6,
+                           Ettdeb = value.Ettdeb,
+                           Qtt = value.Qtt,
+                           Stipo = value.Stipo,
+                           //ver este campo no trace
+                           Armazem = value.Armazem,
+                           //
+                           //ver esta conversao
+                           Rdata = Convert.ToDateTime(value.Rdata),
+                           //
+                           //campos que nao vem preenchidos da vo do pda comparar com o trace
+
+
+                           Qtt2 = 0,
+                           Pu = 0,
+                           Debito = 0,
+                           Prorc = 0,
+                           No = 0,
+                           Pcusto = 0,
+                           Serie = " ",
+                           Nomquina = 0,
+                           Nopat = 0,
+                           Fno = 0,
+                           Fdata = DateTime.UtcNow,
+                           Nmdoc = " ",
+                           Ndoc = 0,
+                           Forref = " ",
+                           Dedata = DateTime.UtcNow,
+                           Atedata = DateTime.UtcNow,
+                           Lobs = " ",
+                           Ldossier = 0,
+                           //teste para obter o bo obranome
+
+                           //
+                           Fechada = false,
+                           Datafinal = DateTime.UtcNow,
+                           Dataobra = DateTime.UtcNow,
+                           Dataopen = DateTime.UtcNow,
+                           Datafecho = DateTime.UtcNow,
+                           Tecnico = 0,
+                           Maquina = " ",
+                           Marca = " ",
+                           Zona = " ",
+                           Litem = " ",
+                           Vumoeda = 0,
+                           Resfor = false,
+                           Rescli = false,
+                           Resrec = false,
+                           Iprint = false,
+                           Lobs2 = " ",
+                           Litem2 = " ",
+                           Lobs3 = " ",
+                           Estab = 0,
+                           Resusr = false,
+                           Ar2Mazem = 0,
+                           Composto = false,
+                           Compostoori = false,
+                           Lrecno = " ",
+                           Fmarcada = false,
+                           Producao = false,
+                           Local = " ",
+                           Morada = " ",
+                           Codpost = " ",
+                           Nome = " ",
+                           Tabfor = false,
+                           Tabela1 = " ",
+                           Descli = false,
+                           Reff = " ",
+                           Lote = " ",
+                           Cor = " ",
+                           Tam = " ",
+                           Segmento = " ",
+                           Bofref = " ",
+                           Bifref = " ",
+                           Grau = 0,
+                           Partes = 0,
+                           Partes2 = 0,
+                           Altura = 0,
+                           Largura = 0,
+                           Espessura = 0,
+                           Biserie = " ",
+                           Infref = false,
+                           Lifref = false,
+                           Uni2Qtt = 0,
+                           Epu = 0,
+                           Eprorc = 0,
+                           Epcusto = 0,
+                           Ttdeb = 0,
+                           Ttmoeda = 0,
+                           Adoc = " ",
+                           Binum1 = 0,
+                           Binum2 = 0,
+                           Codigo = " ",
+                           Cpoc = 0,
+                           Stns = false,
+                           Obistamp = " ",
+                           Oobistamp = " ",
+                           Usr1 = " ",
+                           Usr2 = " ",
+                           Usr3 = " ",
+                           Usr4 = " ",
+                           Usr5 = " ",
+                           Usr6 = " ",
+                           Usalote = false,
+                           Texteis = false,
+                           Unidade = " ",
+                           Unidad2 = " ",
+                           Oftstamp = " ",
+                           Ofostamp = " ",
+                           Sattotal = false,
+                           Noserie = false,
+                           Slvu = 0,
+                           Eslvu = 0,
+                           Sltt = 0,
+                           Esltt = 0,
+                           Slvumoeda = 0,
+                           Slttmoeda = 0,
+                           Ncmassa = 0,
+                           Ncunsup = 0,
+                           Ncvest = 0,
+                           Encvest = 0,
+                           Nccod = " ",
+                           Ncinteg = " ",
+                           Classif = 0,
+                           Classifc = " ",
+                           Posic = " ",
+
+                           Series = " ",
+                           Series2 = " ",
+                           Ccusto = " ",
+                           Ncusto = " ",
+                           Num1 = 0,
+                           Fechabo = false,
+                           Oobostamp = " ",
+                           Ltab1 = " ",
+                           Ltab2 = " ",
+                           Ltab3 = " ",
+                           Ltab4 = " ",
+                           Ltab5 = " ",
+                           Fami = " ",
+                           Pctfami = 0,
+                           Adjudicada = false,
+                           Tieca = 0,
+                           Etieca = 0,
+                           Mtieca = 0,
+                           Volume = 0,
+                           Iecasug = false,
+                           Iecagrad = 0,
+                           Iecacodisen = " ",
+                           Peso = 0,
+                           Pbruto = 0,
+                           Codfiscal = " ",
+                           Dgeral = " ",
+                           Temoci = false,
+                           Temomi = false,
+                           Temsubemp = false,
+                           Encargo = 0,
+                           Eencargo = 0,
+                           Custoind = 0,
+                           Tiposemp = " ",
+                           Pvok = false,
+                           Boclose = false,
+                           Dtclose = DateTime.UtcNow,
+                           Quarto = " ",
+                           Emconf = false,
+                           Efornecedor = " ",
+                           Efornec = 0,
+                           Efornestab = 0,
+                           Cativo = false,
+                           Optstamp = " ",
+                           Oristamp = " ",
+                           Temeco = false,
+                           Ecoval = 0,
+                           Tecoval = 0,
+                           Etecoval = 0,
+                           Eecoval = 0,
+                           Eecoval2 = 0,
+                           Etecoval2 = 0,
+                           Econotcalc = false,
+                           Ousrinis = " ",
+                           Ousrdata = DateTime.UtcNow,
+                           Ousrhora = " ",
+                           Usrinis = " ",
+                           Usrdata = DateTime.UtcNow,
+                           Usrhora = " ",
+                           Marcada = false,
+                           Mntencargos = false,
+                           Debitoori = 0,
+                           Edebitoori = 0,
+                           Trocaequi = false,
+                           Tpromo = 0,
+                           Valdesc = 0,
+                           Evaldesc = 0,
+                           Ecoval2 = 0,
+                           Ecustoind = 0,
+                           Tecoval2 = 0,
+                           Obranome = "",
+                           Design = "",
+                           Vendedor = 0,
+                           Familia = "",
+                           Ndos = 0,
+                           Vendnm = "",
+                           Nmdos = ""
+                           //
+                           
+
+                       };
+        }
+        #endregion
         #endregion
 
         #region ConvertBI2
-        
+
 
         #region GenerateBi2
         /// <summary>
@@ -941,27 +1201,241 @@ namespace ConnectorService.Utilities
          
         }
 
-        private decimal DevolveBoAno(string value)
-        {
-            var tmpData = DateTime.ParseExact(value,"yyyy-MM-dd H:mm:ss", CultureInfo.InvariantCulture);
-
-
-            return tmpData.Year;
-        }
-
-        private DateTime DevolveDataObra(string value)
-        {
-            //var resultado = DateTime.UtcNow;
-            
-            return DateTime.ParseExact(value, "yyyy-MM-dd H:mm:ss",CultureInfo.InvariantCulture);
-        }
+       
 
          
+        #endregion
+
+        #region ConvertRemoteBOTbBo
+        public Bo ConvertRemoteBoToTb(RemoteBo value)
+        {
+            return new Bo
+            {
+                Bostamp = value.BOstamp,
+                Vendedor = value.Vendedor,
+                // nome do vendedor fora figo Vendnm = value.Vendnm,
+                // o mesmo para o nome do dossierNmdos = value.Nmdos,
+                Ndos = value.Ndos,
+                Obrano = value.Obrano,
+                Dataobra = DevolveDataObra(value.Dataobra),
+                //Dataobra = Convert.ToDateTime(value.Dataobra),
+                //Obranome = value.Obranome,
+                Nome = value.BoNome,
+                //Nome2 = value.Nome2,
+                No = value.No,
+                Estab = value.Estab,
+                //Obs = value.Obs,
+                Statuspda = value.Statuspda,
+                Ebo2Tvall = value.Ebo2Tvall,
+                Ebo2Tdes1 = value.Ebo2Tdes1,
+                Ebo2Tdes2 = value.Ebo2Tdes2,
+                EboTotp2 = value.EboTotp2,
+                Edescc = value.Edescc,
+                Ebo12Bins = value.Ebo12Bins,
+                Ebo12Iva = value.Ebo12Iva,
+                Ebo22Iva = value.Ebo22Iva,
+                Ebo22Bins = value.Ebo22Bins,
+                Ebo32Bins = value.Ebo32Bins,
+                Ebo32Iva = value.Ebo32Iva,
+                Ebo42Bins = value.Ebo42Bins,
+                Ebo42Iva = value.Ebo42Iva,
+                Ebo52Bins = value.Ebo52Bins,
+                Ebo52Iva = value.Ebo52Iva,
+                Ebo62Bins = value.Ebo62Bins,
+                Ebo62Iva = value.Ebo62Iva,
+                Etotaldeb = value.Etotaldeb,
+                //campos que nao estao presentes na bd sqlite
+                Tipo = "4",
+                Datafinal = DateTime.UtcNow,
+                Smoe1 = 0,
+                Smoe2 = 0,
+                Smoe3 = 0,
+                Smoe4 = 0,
+                Moetotal = 0,
+                Sdeb1 = 0,
+                Sdeb2 = 0,
+                Sdeb3 = 0,
+                Sdeb4 = 0,
+                Sqtt14 = 0,
+                Sqtt13 = 0,
+                Sqtt12 = 0,
+                Sqtt11 = 0,
+                Sqtt24 = 0,
+                Sqtt23 = 0,
+                Sqtt22 = 0,
+                Sqtt21 = 0,
+                Vqtt21 = 0,
+                Vqtt22 = 0,
+                Vqtt23 = 0,
+                Vqtt24 = 0,
+                Stot1 = 0,
+                Stot2 = 0,
+                Stot3 = 0,
+                Stot4 = 0,
+                Boano = DevolveBoAno(value.Dataobra),
+                Dataopen = DateTime.UtcNow,
+                Datafecho = DateTime.UtcNow,
+                Fechada = false,
+                Nopat = 0,
+                Total = 0,
+                Tecnico = 0,
+                Tecnnm = " ",
+                Nomquina = 0,
+                Maquina = " ",
+                Marca = " ",
+                Serie = " ",
+                Zona = " ",
+                Trab1 = " ",
+                Trab2 = " ",
+                Trab3 = " ",
+                Trab4 = " ",
+                Trab5 = " ",
+                Custo = 0,
+                Moeda = " ",
+                Morada = " ",
+                Local = " ",
+                Codpost = " ",
+                Ultfact = DateTime.UtcNow,
+                Period = 0,
+                Tabela1 = " ",
+                Ncont = " ",
+                Logi1 = false,
+                Logi2 = false,
+                Logi3 = false,
+                Logi4 = false,
+                Logi5 = false,
+                Logi6 = false,
+                Logi7 = false,
+                Logi8 = false,
+                Segmento = " ",
+                Impresso = false,
+                Userimpresso = " ",
+                Fref = " ",
+                Ccusto = " ",
+                Ncusto = " ",
+                Cobranca = " ",
+                Infref = false,
+                Lifref = false,
+                Esdeb1 = 0,
+                Esdeb2 = 0,
+                Esdeb3 = 0,
+                Esdeb4 = 0,
+                Evqtt21 = 0,
+                Evqtt22 = 0,
+                Evqtt23 = 0,
+                Evqtt24 = 0,
+                Estot1 = 0,
+                Estot2 = 0,
+                Estot3 = 0,
+                Estot4 = 0,
+                Etotal = 0,
+                Ecusto = 0,
+                Bo2Tdesc1 = 0,
+                Bo2Tdesc2 = 0,
+                Descc = 0,
+                Bo1Tvall = 0,
+                Bo2Tvall = 0,
+                Edi = false,
+                Memissao = " ",
+                Pastamp = " ",
+                Snstamp = " ",
+                Mastamp = " ",
+                Origem = " ",
+                Orinopat = 0,
+                Iiva = false,
+                Iunit = false,
+                Itotais = false,
+                Iunitiva = false,
+                Itotaisiva = false,
+                Site = " ",
+                Pnome = " ",
+                Pno = 0,
+                Cxstamp = " ",
+                Cxusername = " ",
+                Ssstamp = " ",
+                Ssusername = " ",
+                Alldescli = false,
+                Alldesfor = false,
+                Series = " ",
+                Series2 = " ",
+                Quarto = " ",
+                Ocupacao = 0,
+                Tabela2 = " ",
+                Obstab2 = " ",
+                Iemail = " ",
+                Inome = " ",
+                Situacao = 0,
+                Lang = " ",
+                Ean = " ",
+                Iecacodisen = " ",
+                Boclose = false,
+                Dtclose = DateTime.UtcNow,
+                Tpstamp = " ",
+                Tpdesc = " ",
+                Emconf = false,
+                Aprovado = false,
+                Ousrinis = " ",
+                Ousrdata = DateTime.UtcNow,
+                Ousrhora = DateTime.UtcNow.Hour.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Minute.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Second.ToString(CultureInfo.InvariantCulture),
+                Usrdata = DateTime.UtcNow,
+                Usrhora = DateTime.UtcNow.Hour.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Minute.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Second.ToString(CultureInfo.InvariantCulture),
+                Marcada = false,
+                Bo11Bins = 0,
+                Bo11Iva = 0,
+                Bo12Bins = 0,
+                Bo12Iva = 0,
+                Bo21Bins = 0,
+                Bo21Iva = 0,
+                Usrinis = DateTime.UtcNow.Hour.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Minute.ToString(CultureInfo.InvariantCulture) + DateTime.UtcNow.Second.ToString(CultureInfo.InvariantCulture),
+                Bo22Bins = 0,
+                Bo22Iva = 0,
+                Bo31Bins = 0,
+                Bo31Iva = 0,
+                Bo32Bins = 0,
+                Bo32Iva = 0,
+                Bo41Bins = 0,
+                Bo41Iva = 0,
+                Bo42Bins = 0,
+                Bo42Iva = 0,
+                Bo51Bins = 0,
+                Bo51Iva = 0,
+                Bo52Bins = 0,
+                Bo52Iva = 0,
+                Bo61Bins = 0,
+                Bo61Iva = 0,
+                Bo62Bins = 0,
+                Bo62Iva = 0,
+                BoTotp1 = 0,
+                BoTotp2 = 0,
+                Ebo11Bins = 0,
+                Ebo11Iva = 0,
+                Ebo21Bins = 0,
+                Ebo21Iva = 0,
+                Ebo31Bins = 0,
+                Ebo31Iva = 0,
+                Ebo41Bins = 0,
+                Ebo41Iva = 0,
+                Ebo51Bins = 0,
+                Ebo51Iva = 0,
+                Ebo61Bins = 0,
+                Ebo61Iva = 0,
+                Ebo1Tvall = 0,
+                EboTotp1 = 0,
+                Totaldeb = 0,
+                Nome2 = "",
+                Vendnm = "",
+                Obs = "",
+                Nmdos = "",
+                Obranome = ""
+
+                //
+            };
+        }
         #endregion
         #endregion
 
         #region ConvertBO2
-        
+
 
         #region GenerateBo2
         /// <summary>
@@ -1369,6 +1843,22 @@ namespace ConnectorService.Utilities
             var valor = 0;
             var tparseresult = int.TryParse(value, NumberStyles.Any, CultureInfo.InvariantCulture, out valor);
             return tparseresult ? valor : 0;
+        }
+
+
+        private decimal DevolveBoAno(string value)
+        {
+            var tmpData = DateTime.ParseExact(value, "yyyy-MM-dd H:mm:ss", CultureInfo.InvariantCulture);
+
+
+            return tmpData.Year;
+        }
+
+        private DateTime DevolveDataObra(string value)
+        {
+            //var resultado = DateTime.UtcNow;
+
+            return DateTime.ParseExact(value, "yyyy-MM-dd H:mm:ss", CultureInfo.InvariantCulture);
         }
         #endregion
         #region ConvertQuery

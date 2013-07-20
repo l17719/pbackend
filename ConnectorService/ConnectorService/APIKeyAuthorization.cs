@@ -34,10 +34,6 @@ namespace ConnectorService
             List<Guid> listaApis;
             using (var tmp = new DbContextIfElse(_utility.DevolveCOnnectionStringIf().ProviderConnectionString))
             {
-                
-                
-
-
                 listaApis = (from t in tmp.Terminais
                               select t.AccessKey).ToList();
                

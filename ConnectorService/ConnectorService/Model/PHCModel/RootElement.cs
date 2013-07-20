@@ -12,6 +12,11 @@ namespace ConnectorService.Model.PHCModel
         [JsonProperty("DADOSBO")]
         public IList<Vobo> VoBoList { get; set; }
 
+        //[JsonProperty("DADOSBI")]
+        //public IList<RemoteBi> VoBiList { get; set; }
+
+        //[JsonProperty("DADOSBO")]
+        //public IList<RemoteBo> VoBoList { get; set; }
        
     }
 }

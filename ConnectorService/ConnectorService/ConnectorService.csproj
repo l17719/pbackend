@@ -141,6 +141,8 @@
     <Compile Include="Model\PHCModel\st.cs" />
     <Compile Include="Model\PHCModel\taxasiva.cs" />
     <Compile Include="Model\PHCModel\Stobs.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\RemoteBi.cs" />
+    <Compile Include="Model\PHCModel\VODadosPHC\RemoteBo.cs" />
     <Compile Include="Model\PHCModel\VODadosPHC\VOAtptit.cs" />
     <Compile Include="Model\PHCModel\VODadosPHC\VoBi.cs" />
     <Compile Include="Model\PHCModel\VODadosPHC\VOBiDois.cs" />
