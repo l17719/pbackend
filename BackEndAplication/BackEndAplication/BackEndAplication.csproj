@@ -298,13 +298,16 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Content Include="Lib\Caliburn.Micro.dll" />
+    <Resource Include="Lib\Caliburn.Micro.xml" />
+    <Content Include="Lib\RestSharp.dll" />
+    <Content Include="Lib\System.Windows.Interactivity.dll" />
+    <Resource Include="Lib\System.Windows.Interactivity.xml" />
     <Content Include="ServiceSetup\ConnectorServiceSetup.msi">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Lib\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="imgs\16ApplicationIcon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
