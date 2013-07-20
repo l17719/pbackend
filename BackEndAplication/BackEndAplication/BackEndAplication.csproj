@@ -65,7 +65,7 @@
       <HintPath>..\..\..\..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
-      <HintPath>..\..\..\..\..\Dropbox\ifelse\source\bibliotecas\RestSharp10.4\RestSharp.dll</HintPath>
+      <HintPath>Lib\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

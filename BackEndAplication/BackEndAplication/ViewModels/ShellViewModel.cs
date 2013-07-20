@@ -519,12 +519,12 @@ namespace BackEndAplication.ViewModels
                     break;
                 case AccaoEfectuada.UpdatedTerminalData:
                     SelectedTerminal = message.EventoDataTerminal;
-
+                    SelectedOpTerminais = _service.GetEntityOpcoes(SelectedTerminal.FkIDOT);
                     // verificar se o SelectedOpTerminais nao e nulo
-                    if (SelectedOpTerminais == null)
-                    {
-                        SelectedOpTerminais = _service.GetEntityOpcoes(SelectedTerminal.FkIDOT);
-                    }
+                    //if (SelectedOpTerminais == null)
+                    //{
+                    //    SelectedOpTerminais = _service.GetEntityOpcoes(SelectedTerminal.FkIDOT);
+                    //}
                     //
 
                     ActivateItem(Items.Single(p => p.DisplayName == "DadosPhc"));

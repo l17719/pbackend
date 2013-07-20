@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "MsmKey" = "8:_001E3C1437224401820171418B75B80C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_115430518065E2A736415D1C4A922130"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_124CD73147BF22E4EFBAAB8BA71F66F3"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -52,7 +52,7 @@
         "Entry"
         {
         "MsmKey" = "8:_59DA97E484F85A6C2224877582A804DF"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_AD368A84BC1BBD74BE401830E345598B"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,7 +94,7 @@
         "Entry"
         {
         "MsmKey" = "8:_AE06FFE4916699D48FFA697B9E17C513"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -112,13 +112,13 @@
         "Entry"
         {
         "MsmKey" = "8:_CE3C14AD4583FAD5FA69278D9C908204"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E9CD5598D24A39077DDF4A8A257C124D"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -130,7 +130,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_08CDE664A9D6472788A650B109994EF0"
+        "OwnerKey" = "8:_001E3C1437224401820171418B75B80C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -601,11 +601,11 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:ConnectorService"
         "ProductCode" = "8:{00C01E07-0758-4E30-8224-49C64CFE492F}"
-        "PackageCode" = "8:{4D2E5C07-8A2D-41F9-8F7E-360148D33D9C}"
+        "PackageCode" = "8:{9B1DA14F-0417-46BB-996F-3682221D66EB}"
         "UpgradeCode" = "8:{EDE00A47-5BC6-459E-8D91-79AAE76733DA}"
         "AspNetVersion" = "8:4.0.30319.0"
-        "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RestartWWWService" = "11:TRUE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
@@ -1051,7 +1051,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_08CDE664A9D6472788A650B109994EF0"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_001E3C1437224401820171418B75B80C"
             {
             "SourcePath" = "8:..\\ConnectorService\\obj\\Release\\ConnectorService.dll"
             "TargetName" = "8:"
@@ -1079,7 +1079,7 @@
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AC9395071CBB45FFB61CA15FFD474DFB"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C05B476F296E4A12BA4EF20B737DE17E"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"
