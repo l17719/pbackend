@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PHCServiceConnector.PHCConnectorService" CodeBehind="PHCConnectorService.svc.cs" %>
