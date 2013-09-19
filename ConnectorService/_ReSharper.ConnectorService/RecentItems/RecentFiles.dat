@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:fltcl.cs" caret="216" fromTop="11" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VOst.cs" caret="1841" fromTop="50" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VOCC.cs" caret="3096" fromTop="15" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:CcFiltradas.cs" caret="1337" fromTop="33" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:IFModel/d:VODadosTerminal/f:DadosEncomendas.cs" caret="284" fromTop="9" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:IFModel/d:VODadosTerminal/f:DadosTerminal.cs" caret="566" fromTop="12" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:IFModel/d:VODadosTerminal/f:ConfiguracaoTerminal.cs" caret="172" fromTop="6" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:Vopn.cs" caret="364" fromTop="12" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:Mapping/f:bi2Map.cs" caret="11739" fromTop="25" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:bi2.cs" caret="4373" fromTop="92" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:Mapping/f:biMap.cs" caret="8824" fromTop="17" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:bi.cs" caret="1329" fromTop="17" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:RemoteBo.cs" caret="848" fromTop="17" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:RemoteBi.cs" caret="202" fromTop="5" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VOtaxasIVA.cs" caret="570" fromTop="16" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VOCL.cs" caret="2377" fromTop="11" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:PnsFiltradas.cs" caret="229" fromTop="9" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VoBi.cs" caret="722" fromTop="0" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:DynamicLibrary.cs" caret="23825" fromTop="9" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:PHCDbContext.cs" caret="1275" fromTop="0" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/d:VODadosPHC/f:VOBO.cs" caret="921" fromTop="15" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:APIKeyAuthorization.cs" caret="3258" fromTop="14" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:RootElement.cs" caret="568" fromTop="19" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:IDataConnector.cs" caret="6093" fromTop="13" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc" caret="0" fromTop="0" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:LogFactoryManager.cs" caret="2237" fromTop="12" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="136" fromTop="4" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="36688" fromTop="9" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:bo.cs" caret="0" fromTop="0" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:Web.config" caret="4608" fromTop="14" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="22544" fromTop="20" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="22835" fromTop="16" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="23036" fromTop="11" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="21839" fromTop="13" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="53186" fromTop="6" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="45414" fromTop="10" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="45657" fromTop="15" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="45741" fromTop="11" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="3997" fromTop="22" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="21973" fromTop="17" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="3395" fromTop="19" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="4968" fromTop="5" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="31949" fromTop="20" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="53052" fromTop="25" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="3290" fromTop="19" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="4255" fromTop="20" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="11289" fromTop="21" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:RootElement.cs" caret="559" fromTop="18" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Model/d:PHCModel/f:RootElement.cs" caret="326" fromTop="12" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="10602" fromTop="13" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="10825" fromTop="21" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/d:Utilities/f:Utility.cs" caret="11500" fromTop="21" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="41419" fromTop="12" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:Web.config" caret="4566" fromTop="24" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="3997" fromTop="10" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="4658" fromTop="23" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:APIKeyAuthorization.cs" caret="1168" fromTop="8" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="5454" fromTop="6" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="5823" fromTop="9" />
+    <File id="79D00B14-508C-4BFC-B620-B30BD27854B6/f:DataConnector.svc.cs" caret="482" fromTop="13" />
+  </RecentEdits>
+</RecentFiles>

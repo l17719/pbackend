@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IFLicenceDBModelStoreContainer" CdmEntityContainer="LicContext">
+    <EntitySetMapping Name="TbLicencas">
+      <EntityTypeMapping TypeName="IFLicenceDBModel.TbLicenca">
+        <MappingFragment StoreEntitySet="TbLicenca">
+          <ScalarProperty Name="KeyIsValid" ColumnName="KeyIsValid" />
+          <ScalarProperty Name="MailCliente" ColumnName="MailCliente" />
+          <ScalarProperty Name="SerialCliente" ColumnName="SerialCliente" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

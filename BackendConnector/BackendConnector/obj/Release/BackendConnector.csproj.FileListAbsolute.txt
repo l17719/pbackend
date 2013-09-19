@@ -1,0 +1,16 @@
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\BackendConnector.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\BackendConnector.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\obj\Release\BackendConnector.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\obj\Release\BackendConnector.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.Unity.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.Unity.pdb
+C:\Users\joao\Documents\Visual Studio 2010\Projects\BackendConnector\BackendConnector\bin\Microsoft.Practices.Unity.Interception.pdb

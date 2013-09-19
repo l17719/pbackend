@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="84BBD4E9-F33B-490A-8BC6-C764A91C87BC" ModuleId="BackendConnector" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+</Modules>

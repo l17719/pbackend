@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="DFC33A8E-2A84-41B4-8C3D-41476A306E79" ModuleId="PHCServiceConnector" />
+  <Module PersistentId="18F81DA0-AB4B-4919-88AC-7C04AB23B507" ModuleId="AppFabricCachingCore" />
+</Modules>

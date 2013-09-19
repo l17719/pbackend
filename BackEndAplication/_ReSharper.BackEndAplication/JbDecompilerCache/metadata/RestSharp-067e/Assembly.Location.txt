@@ -1,0 +1,1 @@
+﻿C:\Users\joao\Dropbox\ifelse\source\bibliotecas\RestSharp10.4\RestSharp.dll

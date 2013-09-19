@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="79D00B14-508C-4BFC-B620-B30BD27854B6" ModuleId="ConnectorService" />
+  <Module PersistentId="d:ConnectorServiceSetup" ModuleId="EntityFramework" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+</Modules>

@@ -1,0 +1,12 @@
+﻿Code version: 6.1.1000.82
+Assembly name RestSharp, Version=104.1.0.0, Culture=neutral, PublicKeyToken=null mvid {166e33d6-a255-4d28-9d8e-46e06fa96eb0}
+* ref mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {30fc8885-0ad3-4daf-8f86-7cbc3ada8cfe}
+* ref System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {129e6779-933c-4ec3-819b-6dcf0fdf5e80}
+* ref System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {0a8a2ddf-3f13-4dea-9ae6-c8c652b58832}
+* ref System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {87262f64-19e0-4217-a477-3d6530760806}
+* ref System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {8228ed4f-fef4-4bc8-bcb6-df137b634dd1}

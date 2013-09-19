@@ -1,0 +1,18 @@
+﻿Code version: 6.1.1000.82
+Assembly name Caliburn.Micro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null mvid {6892c07e-d97a-45f3-a414-f50f6a0edb95}
+* ref mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {fcb9dac8-ae3a-4886-93b0-f4cd5b0db0be}
+* ref System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {0467f5c0-e463-4b2c-acc5-f718cb71f056}
+* ref WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {d4ad6e4d-a9ca-4a4f-8360-734ab131b697}
+* ref System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {aae9a92c-fb4a-4427-a2c1-2e6256cd1f02}
+* ref PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {9d5a22be-716a-46a6-9897-35271088797a}
+* ref PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {f6bf19b3-9315-496f-a586-3e90b078f615}
+* ref System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {c08d55d3-6463-439d-b112-60f6502ec141}
+* ref System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {03fd13f2-8aca-4d0a-8cb7-cbeefe8b0d61}

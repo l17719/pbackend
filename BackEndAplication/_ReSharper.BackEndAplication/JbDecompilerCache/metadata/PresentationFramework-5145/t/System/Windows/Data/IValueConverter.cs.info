@@ -1,0 +1,30 @@
+﻿Code version: 6.1.1000.82
+Assembly name PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 mvid {19beae09-7568-496c-9b45-912c2d3940e2}
+* ref mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {3e47475e-95fe-42e6-a243-cf5a610648e9}
+* ref System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {c80dad77-8b28-43fe-9190-79fcf991a420}
+* ref System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {5f46dc30-d570-4bf0-89a7-bd890bab36c3}
+* ref PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {a7f8be2f-e3d6-473d-9a4e-78184309d78c}
+* ref System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {a53a1e3f-5eda-41d0-847c-7834405ae11d}
+* ref WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {96268312-8112-448d-9437-3b4d97ac4577}
+* ref UIAutomationProvider, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {0aee82e3-4525-4093-ae41-db75ed13f4c2}
+* ref System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {92e20897-1941-4aa2-a68e-7acc8bba4dba}
+* ref System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  mvid {250dde86-b537-4ec7-93d1-485b269cbaa3}
+* ref PresentationUI, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {0a1b060c-da43-4948-b903-5559ef023344}
+* ref System.Printing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {89cf11fa-325c-41f2-85f5-0ba484f9cb92}
+* ref ReachFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {a68254df-8d15-4b87-a0d4-6252dd489335}
+* ref UIAutomationTypes, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+  mvid {e15bfcfa-8a3a-4139-9a9e-45fd25f959a9}
+* ref Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  mvid {6eb2846f-ed1a-4939-a03d-1daac07fc5e3}

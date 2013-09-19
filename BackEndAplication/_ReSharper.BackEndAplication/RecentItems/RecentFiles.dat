@@ -1,0 +1,66 @@
+﻿<RecentFiles>
+  <RecentFiles>
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:PHCDBModel/d:Mapping/f:fltclMap.cs" caret="2279" fromTop="30" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosTerminalView.xaml.cs" caret="289" fromTop="11" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml.cs" caret="228" fromTop="9" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/f:Bootstrapper.cs" caret="1232" fromTop="18" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:StoredProc/f:ResultsList.cs" caret="12946" fromTop="34" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Utilities/f:ShowDialog.cs" caret="529" fromTop="20" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Properties/f:AssemblyInfo.cs" caret="326" fromTop="8" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:ServerConfigView.xaml" caret="212" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Utilities/f:Utility.cs" caret="19372" fromTop="18" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:TerminalDBModel/f:DBTerminalContext.cs" caret="383" fromTop="11" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:MessageBoxViewModel.cs" caret="40" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:PHCDBModel/d:Mapping/f:fltstMap.cs" caret="286" fromTop="11" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:PHCDBModel/f:PDBContext.cs" caret="806" fromTop="16" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:TerminalDBModel/d:Mapping/f:TbOpcoesTerminalMap.cs" caret="3231" fromTop="28" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:TerminalDBModel/d:Mapping/f:TbTerminalMap.cs" caret="0" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/f:app.config" caret="967" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:ServerConfigViewModel.cs" caret="8834" fromTop="37" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:MessageBoxView.xaml" caret="1376" fromTop="20" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:InitialViewModel.cs" caret="0" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml" caret="9764" fromTop="20" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:FimConfiguracaoViewModel.cs" caret="1139" fromTop="12" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosTerminalViewModel.cs" caret="3788" fromTop="16" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="32528" fromTop="26" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Events/f:EventoChangeActiveViewTerminal.cs" caret="751" fromTop="22" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Events/f:EventoSelectedData.cs" caret="560" fromTop="18" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:ListaTerminaisViewModel.cs" caret="4220" fromTop="2" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Models/d:TerminalDBModel/f:TbOpcoesTerminal.cs" caret="192" fromTop="8" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Service/f:RemoteService.cs" caret="4387" fromTop="14" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Service/f:DataService.cs" caret="23478" fromTop="19" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:ShellViewModel.cs" caret="19152" fromTop="10" />
+  </RecentFiles>
+  <RecentEdits>
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Service/f:DataService.cs" caret="20961" fromTop="20" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="32173" fromTop="21" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml" caret="8744" fromTop="0" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="21853" fromTop="19" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="24141" fromTop="22" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="5216" fromTop="11" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="18228" fromTop="16" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="29915" fromTop="17" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="32217" fromTop="22" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="19264" fromTop="11" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="18772" fromTop="6" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="17417" fromTop="23" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="20311" fromTop="13" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="17029" fromTop="17" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="27318" fromTop="28" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="27312" fromTop="17" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="27312" fromTop="17" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml" caret="10420" fromTop="22" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml" caret="10936" fromTop="29" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Views/f:DadosPhcView.xaml" caret="9833" fromTop="21" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="30478" fromTop="17" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="10001" fromTop="19" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="10454" fromTop="25" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="10906" fromTop="25" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="10212" fromTop="7" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="10664" fromTop="22" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:DadosPhcViewModel.cs" caret="9758" fromTop="5" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:Service/f:RemoteService.cs" caret="131" fromTop="5" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:ShellViewModel.cs" caret="19648" fromTop="18" />
+    <File id="C536F2F6-559B-4A6A-B139-5E205BA04FD2/d:ViewModels/f:ShellViewModel.cs" caret="19372" fromTop="13" />
+  </RecentEdits>
+</RecentFiles>
